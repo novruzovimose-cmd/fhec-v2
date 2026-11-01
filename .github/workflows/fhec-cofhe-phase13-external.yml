@@ -48,6 +48,8 @@ jobs:
       - name: Install locked CoFHE Hardhat dependencies
         working-directory: integration/cofhe-hardhat
         run: pnpm install --frozen-lockfile
+      - name: Generate Solidity from FHEC source
+        run: cargo run --locked -p fhec-cli -- cofhe examples/cofhe_extended.fhe --out integration/cofhe-hardhat/contracts/FHECGenerated.sol
       - name: Compile Solidity under Hardhat mocks
         working-directory: integration/cofhe-hardhat
         run: pnpm run compile

@@ -1,0 +1,15 @@
+[package]
+name = "fhec-backend-tfhe"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+bincode = "1.3.3"
+fhec-analyzer = { path = "../fhec-analyzer" }
+fhec-backend = { path = "../fhec-backend" }
+rayon = "1"
+tfhe = { version = "1.8.1", features = ["boolean"] }
+serde = { version = "1", features = ["derive"] }

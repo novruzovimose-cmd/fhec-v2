@@ -1,0 +1,12 @@
+[package]
+name = "fhec-runtime"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+fhec-analyzer = { path = "../fhec-analyzer" }
+fhec-backend = { path = "../fhec-backend" }
+fhec-circuit = { path = "../fhec-circuit" }

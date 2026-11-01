@@ -1,0 +1,84 @@
+{
+  "schema": "fhec-cofhe-phase89-live-plan-v1",
+  "chain": "arb-sepolia",
+  "chain_id": 421614,
+  "profile": "smoke6",
+  "variant_mode": "optimized-tuned",
+  "variants": [
+    {
+      "name": "optimized",
+      "contract": "FHECPhase6Live"
+    },
+    {
+      "name": "tuned",
+      "contract": "FHECPhase7Tuned"
+    }
+  ],
+  "case_count": 6,
+  "deployment_count": 2,
+  "execution_count": 12,
+  "total_planned_transactions": 14,
+  "cases": [
+    {
+      "id": "add-u8-03",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "255",
+      "input_b": "255",
+      "expected": "254"
+    },
+    {
+      "id": "sub-u8-07",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "128",
+      "input_b": "127",
+      "expected": "1"
+    },
+    {
+      "id": "mul-u8-17",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "196",
+      "input_b": "195",
+      "expected": "76"
+    },
+    {
+      "id": "gt-u8-12",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "253",
+      "input_b": "3",
+      "expected": true
+    },
+    {
+      "id": "max-u8-25",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "20",
+      "input_b": "211",
+      "expected": "211"
+    },
+    {
+      "id": "repeated-u8-06",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "254",
+      "input_b": "2",
+      "expected": "248"
+    }
+  ],
+  "disclosure": {
+    "input_values_are_public_demo_vectors": true,
+    "fee_ceiling_covers_only_native_chain_transactions": true,
+    "offchain_fhe_task_fees": "unverified; no cap or estimate asserted",
+    "result_verification": "SDK decryptForView matched to independent plaintext oracle; not independently cryptographically attested",
+    "no_live_transactions_without_separate_explicit_consent": true
+  }
+}

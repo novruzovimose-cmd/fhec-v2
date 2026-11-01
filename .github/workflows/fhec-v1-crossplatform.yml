@@ -1,0 +1,51 @@
+name: FHEC V1 Cross-platform Release Gates
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile-test-release:
+    name: Verified source on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    env:
+      CARGO_TERM_COLOR: always
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Install Rust stable, rustfmt, Clippy
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - name: Verify checkout with full locked test suite
+        shell: pwsh
+        run: ./tools/d-release/verify-checkout.ps1 -Project . -AuditMode Skip
+
+  dependency-advisories:
+    name: RustSec dependency audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+      - name: Install cargo-audit
+        run: cargo install cargo-audit --locked
+      - name: Audit lockfile for RustSec advisories
+        run: cargo audit

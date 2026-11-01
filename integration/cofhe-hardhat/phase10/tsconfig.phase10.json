@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig.json",
+  "include": [
+    "../phase89/hardhat.phase89.config.ts",
+    "../phase89/test/FHECPhase89Prepared.test.ts",
+    "./test/FHECPhase10Properties.test.ts"
+  ],
+  "exclude": ["node_modules"]
+}

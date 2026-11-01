@@ -1,0 +1,743 @@
+{
+  "schema": "fhec-cofhe-phase10-validated-mock-results-v1",
+  "evidence_tier": "independently-recomputed-local-mock-differential-results",
+  "corpus_sha256": "4913CF9B3758A1561ECC715EA4920170804EAF1B80ACABB5CA2F8662AF8D689C",
+  "raw_evidence_sha256": "9583A4543E283484E401EA9B20DB1B92BC8C727848A96FD6DC728E29813E6CA1",
+  "source_seal_file_sha256": "721BB33FB4183356CC66351CD210B3CACA201BB9CAB6E964FD526890679E6D11",
+  "cases": 72,
+  "variants": [
+    "optimized",
+    "tuned",
+    "straight"
+  ],
+  "successful_mock_executions": 216,
+  "operation_width_families": 24,
+  "negative_consuming_contract_test_required": true,
+  "families": [
+    {
+      "family": "add/u8",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "276771",
+          "total_mock_gas": "846968",
+          "minimum_mock_gas": "276747",
+          "maximum_mock_gas": "293450",
+          "median_sdk_encrypt_ms": "17"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "276638",
+          "total_mock_gas": "846726",
+          "minimum_mock_gas": "276638",
+          "maximum_mock_gas": "293450",
+          "median_sdk_encrypt_ms": "17"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "276880",
+          "total_mock_gas": "847093",
+          "minimum_mock_gas": "276868",
+          "maximum_mock_gas": "293345",
+          "median_sdk_encrypt_ms": "16"
+        }
+      }
+    },
+    {
+      "family": "sub/u8",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "294992",
+          "total_mock_gas": "865435",
+          "minimum_mock_gas": "274928",
+          "maximum_mock_gas": "295515",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "294968",
+          "total_mock_gas": "865012",
+          "minimum_mock_gas": "274912",
+          "maximum_mock_gas": "295132",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "294964",
+          "total_mock_gas": "864968",
+          "minimum_mock_gas": "274755",
+          "maximum_mock_gas": "295249",
+          "median_sdk_encrypt_ms": "16"
+        }
+      }
+    },
+    {
+      "family": "mul/u8",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "308316",
+          "total_mock_gas": "904874",
+          "minimum_mock_gas": "288044",
+          "maximum_mock_gas": "308514",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "308554",
+          "total_mock_gas": "905233",
+          "minimum_mock_gas": "288032",
+          "maximum_mock_gas": "308647",
+          "median_sdk_encrypt_ms": "17"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "308647",
+          "total_mock_gas": "905459",
+          "minimum_mock_gas": "288165",
+          "maximum_mock_gas": "308647",
+          "median_sdk_encrypt_ms": "16"
+        }
+      }
+    },
+    {
+      "family": "gt/u8",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "318594",
+          "total_mock_gas": "942739",
+          "minimum_mock_gas": "302005",
+          "maximum_mock_gas": "322140",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "318820",
+          "total_mock_gas": "942449",
+          "minimum_mock_gas": "301993",
+          "maximum_mock_gas": "321636",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "318965",
+          "total_mock_gas": "942868",
+          "minimum_mock_gas": "302005",
+          "maximum_mock_gas": "321898",
+          "median_sdk_encrypt_ms": "16"
+        }
+      }
+    },
+    {
+      "family": "max/u8",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "461453",
+          "total_mock_gas": "1382989",
+          "minimum_mock_gas": "440222",
+          "maximum_mock_gas": "481314",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "461429",
+          "total_mock_gas": "1382982",
+          "minimum_mock_gas": "440408",
+          "maximum_mock_gas": "481145",
+          "median_sdk_encrypt_ms": "18"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "461707",
+          "total_mock_gas": "1383296",
+          "minimum_mock_gas": "440420",
+          "maximum_mock_gas": "481169",
+          "median_sdk_encrypt_ms": "15"
+        }
+      }
+    },
+    {
+      "family": "repeated/u8",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "446611",
+          "total_mock_gas": "1298924",
+          "minimum_mock_gas": "405355",
+          "maximum_mock_gas": "446958",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "446716",
+          "total_mock_gas": "1299138",
+          "minimum_mock_gas": "405464",
+          "maximum_mock_gas": "446958",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "547941",
+          "total_mock_gas": "1601807",
+          "minimum_mock_gas": "505292",
+          "maximum_mock_gas": "548574",
+          "median_sdk_encrypt_ms": "15"
+        }
+      }
+    },
+    {
+      "family": "add/u16",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "277364",
+          "total_mock_gas": "848294",
+          "minimum_mock_gas": "277110",
+          "maximum_mock_gas": "293820",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "277243",
+          "total_mock_gas": "848137",
+          "minimum_mock_gas": "277098",
+          "maximum_mock_gas": "293796",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "277110",
+          "total_mock_gas": "847883",
+          "minimum_mock_gas": "277098",
+          "maximum_mock_gas": "293675",
+          "median_sdk_encrypt_ms": "16"
+        }
+      }
+    },
+    {
+      "family": "sub/u16",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "295561",
+          "total_mock_gas": "866525",
+          "minimum_mock_gas": "275001",
+          "maximum_mock_gas": "295963",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "295444",
+          "total_mock_gas": "866372",
+          "minimum_mock_gas": "274989",
+          "maximum_mock_gas": "295939",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "295404",
+          "total_mock_gas": "866489",
+          "minimum_mock_gas": "275146",
+          "maximum_mock_gas": "295939",
+          "median_sdk_encrypt_ms": "16"
+        }
+      }
+    },
+    {
+      "family": "mul/u16",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "309119",
+          "total_mock_gas": "906516",
+          "minimum_mock_gas": "288161",
+          "maximum_mock_gas": "309236",
+          "median_sdk_encrypt_ms": "18"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "309119",
+          "total_mock_gas": "906661",
+          "minimum_mock_gas": "288185",
+          "maximum_mock_gas": "309357",
+          "median_sdk_encrypt_ms": "18"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "309236",
+          "total_mock_gas": "906790",
+          "minimum_mock_gas": "288185",
+          "maximum_mock_gas": "309369",
+          "median_sdk_encrypt_ms": "19"
+        }
+      }
+    },
+    {
+      "family": "gt/u16",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "318995",
+          "total_mock_gas": "943851",
+          "minimum_mock_gas": "302554",
+          "maximum_mock_gas": "322302",
+          "median_sdk_encrypt_ms": "19"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "318866",
+          "total_mock_gas": "943593",
+          "minimum_mock_gas": "302554",
+          "maximum_mock_gas": "322173",
+          "median_sdk_encrypt_ms": "20"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "319104",
+          "total_mock_gas": "943855",
+          "minimum_mock_gas": "302316",
+          "maximum_mock_gas": "322435",
+          "median_sdk_encrypt_ms": "18"
+        }
+      }
+    },
+    {
+      "family": "max/u16",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "462243",
+          "total_mock_gas": "1384872",
+          "minimum_mock_gas": "440549",
+          "maximum_mock_gas": "482080",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "462396",
+          "total_mock_gas": "1385130",
+          "minimum_mock_gas": "440642",
+          "maximum_mock_gas": "482092",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "462485",
+          "total_mock_gas": "1385263",
+          "minimum_mock_gas": "440432",
+          "maximum_mock_gas": "482346",
+          "median_sdk_encrypt_ms": "16"
+        }
+      }
+    },
+    {
+      "family": "repeated/u16",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "448112",
+          "total_mock_gas": "1302397",
+          "minimum_mock_gas": "405802",
+          "maximum_mock_gas": "448483",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "448193",
+          "total_mock_gas": "1302442",
+          "minimum_mock_gas": "405790",
+          "maximum_mock_gas": "448459",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "549942",
+          "total_mock_gas": "1607632",
+          "minimum_mock_gas": "507167",
+          "maximum_mock_gas": "550523",
+          "median_sdk_encrypt_ms": "16"
+        }
+      }
+    },
+    {
+      "family": "add/u32",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "278082",
+          "total_mock_gas": "849988",
+          "minimum_mock_gas": "277949",
+          "maximum_mock_gas": "293957",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "278094",
+          "total_mock_gas": "849972",
+          "minimum_mock_gas": "277949",
+          "maximum_mock_gas": "293929",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "277989",
+          "total_mock_gas": "849855",
+          "minimum_mock_gas": "277949",
+          "maximum_mock_gas": "293917",
+          "median_sdk_encrypt_ms": "15"
+        }
+      }
+    },
+    {
+      "family": "sub/u32",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "296198",
+          "total_mock_gas": "868904",
+          "minimum_mock_gas": "275255",
+          "maximum_mock_gas": "297451",
+          "median_sdk_encrypt_ms": "18"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "296198",
+          "total_mock_gas": "868928",
+          "minimum_mock_gas": "275267",
+          "maximum_mock_gas": "297463",
+          "median_sdk_encrypt_ms": "18"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "296186",
+          "total_mock_gas": "868961",
+          "minimum_mock_gas": "275364",
+          "maximum_mock_gas": "297411",
+          "median_sdk_encrypt_ms": "17"
+        }
+      }
+    },
+    {
+      "family": "mul/u32",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "310699",
+          "total_mock_gas": "910196",
+          "minimum_mock_gas": "288665",
+          "maximum_mock_gas": "310832",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "310594",
+          "total_mock_gas": "909970",
+          "minimum_mock_gas": "288677",
+          "maximum_mock_gas": "310699",
+          "median_sdk_encrypt_ms": "17"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "310711",
+          "total_mock_gas": "910099",
+          "minimum_mock_gas": "288544",
+          "maximum_mock_gas": "310844",
+          "median_sdk_encrypt_ms": "15"
+        }
+      }
+    },
+    {
+      "family": "gt/u32",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "319179",
+          "total_mock_gas": "945371",
+          "minimum_mock_gas": "303097",
+          "maximum_mock_gas": "323095",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "319167",
+          "total_mock_gas": "945492",
+          "minimum_mock_gas": "303230",
+          "maximum_mock_gas": "323095",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "319195",
+          "total_mock_gas": "945746",
+          "minimum_mock_gas": "303456",
+          "maximum_mock_gas": "323095",
+          "median_sdk_encrypt_ms": "15"
+        }
+      }
+    },
+    {
+      "family": "max/u32",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "464432",
+          "total_mock_gas": "1390153",
+          "minimum_mock_gas": "440920",
+          "maximum_mock_gas": "484801",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "464408",
+          "total_mock_gas": "1389468",
+          "minimum_mock_gas": "441106",
+          "maximum_mock_gas": "483954",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "464464",
+          "total_mock_gas": "1390093",
+          "minimum_mock_gas": "441094",
+          "maximum_mock_gas": "484535",
+          "median_sdk_encrypt_ms": "15"
+        }
+      }
+    },
+    {
+      "family": "repeated/u32",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "451732",
+          "total_mock_gas": "1310250",
+          "minimum_mock_gas": "406254",
+          "maximum_mock_gas": "452264",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "451853",
+          "total_mock_gas": "1310085",
+          "minimum_mock_gas": "406125",
+          "maximum_mock_gas": "452107",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "555086",
+          "total_mock_gas": "1618211",
+          "minimum_mock_gas": "507575",
+          "maximum_mock_gas": "555550",
+          "median_sdk_encrypt_ms": "15"
+        }
+      }
+    },
+    {
+      "family": "add/u64",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "279381",
+          "total_mock_gas": "853134",
+          "minimum_mock_gas": "279381",
+          "maximum_mock_gas": "294372",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "279514",
+          "total_mock_gas": "852989",
+          "minimum_mock_gas": "279381",
+          "maximum_mock_gas": "294094",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "279357",
+          "total_mock_gas": "852727",
+          "minimum_mock_gas": "279276",
+          "maximum_mock_gas": "294094",
+          "median_sdk_encrypt_ms": "16"
+        }
+      }
+    },
+    {
+      "family": "sub/u64",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "297820",
+          "total_mock_gas": "873417",
+          "minimum_mock_gas": "275408",
+          "maximum_mock_gas": "300189",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "297711",
+          "total_mock_gas": "873332",
+          "minimum_mock_gas": "275553",
+          "maximum_mock_gas": "300068",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "297832",
+          "total_mock_gas": "873348",
+          "minimum_mock_gas": "275436",
+          "maximum_mock_gas": "300080",
+          "median_sdk_encrypt_ms": "15"
+        }
+      }
+    },
+    {
+      "family": "mul/u64",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "313240",
+          "total_mock_gas": "915177",
+          "minimum_mock_gas": "288580",
+          "maximum_mock_gas": "313357",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "313333",
+          "total_mock_gas": "915137",
+          "minimum_mock_gas": "288459",
+          "maximum_mock_gas": "313345",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "312943",
+          "total_mock_gas": "914799",
+          "minimum_mock_gas": "288604",
+          "maximum_mock_gas": "313252",
+          "median_sdk_encrypt_ms": "16"
+        }
+      }
+    },
+    {
+      "family": "gt/u64",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "319274",
+          "total_mock_gas": "948249",
+          "minimum_mock_gas": "304541",
+          "maximum_mock_gas": "324434",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "319185",
+          "total_mock_gas": "948200",
+          "minimum_mock_gas": "304686",
+          "maximum_mock_gas": "324329",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "319383",
+          "total_mock_gas": "948358",
+          "minimum_mock_gas": "304553",
+          "maximum_mock_gas": "324422",
+          "median_sdk_encrypt_ms": "16"
+        }
+      }
+    },
+    {
+      "family": "max/u64",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "468338",
+          "total_mock_gas": "1397937",
+          "minimum_mock_gas": "441521",
+          "maximum_mock_gas": "488078",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "468326",
+          "total_mock_gas": "1397740",
+          "minimum_mock_gas": "441388",
+          "maximum_mock_gas": "488026",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "468153",
+          "total_mock_gas": "1397926",
+          "minimum_mock_gas": "441509",
+          "maximum_mock_gas": "488264",
+          "median_sdk_encrypt_ms": "16"
+        }
+      }
+    },
+    {
+      "family": "repeated/u64",
+      "cases": 3,
+      "variants": {
+        "optimized": {
+          "sample_count": 3,
+          "median_mock_gas": "458235",
+          "total_mock_gas": "1323216",
+          "minimum_mock_gas": "406536",
+          "maximum_mock_gas": "458445",
+          "median_sdk_encrypt_ms": "16"
+        },
+        "tuned": {
+          "sample_count": 3,
+          "median_mock_gas": "458300",
+          "total_mock_gas": "1323616",
+          "minimum_mock_gas": "406617",
+          "maximum_mock_gas": "458699",
+          "median_sdk_encrypt_ms": "15"
+        },
+        "straight": {
+          "sample_count": 3,
+          "median_mock_gas": "564712",
+          "total_mock_gas": "1637817",
+          "minimum_mock_gas": "507994",
+          "maximum_mock_gas": "565111",
+          "median_sdk_encrypt_ms": "16"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "All gas readings are Hardhat CoFHE mock transactions, not Arbitrum Sepolia receipts.",
+    "Passing matches sampled inputs against an independent arithmetic oracle, not all input space.",
+    "No cryptographic coprocessor execution, protocol fees, testnet deployment or wallet use is implied."
+  ]
+}

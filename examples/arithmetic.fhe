@@ -1,0 +1,7 @@
+fn subtract(a: encrypted<u8>, b: encrypted<u8>) -> encrypted<u8> {
+    return a - b;
+}
+
+fn multiply(a: encrypted<u8>, b: encrypted<u8>) -> encrypted<u8> {
+    return a * b;
+}

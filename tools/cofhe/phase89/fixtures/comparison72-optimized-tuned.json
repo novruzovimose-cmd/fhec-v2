@@ -1,0 +1,678 @@
+{
+  "schema": "fhec-cofhe-phase89-live-plan-v1",
+  "chain": "arb-sepolia",
+  "chain_id": 421614,
+  "profile": "comparison72",
+  "variant_mode": "optimized-tuned",
+  "variants": [
+    {
+      "name": "optimized",
+      "contract": "FHECPhase6Live"
+    },
+    {
+      "name": "tuned",
+      "contract": "FHECPhase7Tuned"
+    }
+  ],
+  "case_count": 72,
+  "deployment_count": 2,
+  "execution_count": 144,
+  "total_planned_transactions": 146,
+  "cases": [
+    {
+      "id": "add-u8-03",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "255",
+      "input_b": "255",
+      "expected": "254"
+    },
+    {
+      "id": "add-u8-07",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "128",
+      "input_b": "127",
+      "expected": "255"
+    },
+    {
+      "id": "add-u8-17",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "196",
+      "input_b": "195",
+      "expected": "135"
+    },
+    {
+      "id": "sub-u8-03",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "255",
+      "input_b": "255",
+      "expected": "0"
+    },
+    {
+      "id": "sub-u8-07",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "128",
+      "input_b": "127",
+      "expected": "1"
+    },
+    {
+      "id": "sub-u8-17",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "196",
+      "input_b": "195",
+      "expected": "1"
+    },
+    {
+      "id": "mul-u8-03",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "255",
+      "input_b": "255",
+      "expected": "1"
+    },
+    {
+      "id": "mul-u8-07",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "128",
+      "input_b": "127",
+      "expected": "128"
+    },
+    {
+      "id": "mul-u8-17",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "196",
+      "input_b": "195",
+      "expected": "76"
+    },
+    {
+      "id": "gt-u8-03",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "255",
+      "input_b": "255",
+      "expected": false
+    },
+    {
+      "id": "gt-u8-07",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "128",
+      "input_b": "127",
+      "expected": true
+    },
+    {
+      "id": "gt-u8-17",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "196",
+      "input_b": "195",
+      "expected": true
+    },
+    {
+      "id": "max-u8-03",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "255",
+      "input_b": "255",
+      "expected": "255"
+    },
+    {
+      "id": "max-u8-07",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "128",
+      "input_b": "127",
+      "expected": "128"
+    },
+    {
+      "id": "max-u8-17",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "196",
+      "input_b": "195",
+      "expected": "196"
+    },
+    {
+      "id": "repeated-u8-03",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "255",
+      "input_b": "255",
+      "expected": "2"
+    },
+    {
+      "id": "repeated-u8-07",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "128",
+      "input_b": "127",
+      "expected": "0"
+    },
+    {
+      "id": "repeated-u8-17",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "196",
+      "input_b": "195",
+      "expected": "152"
+    },
+    {
+      "id": "add-u16-03",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "65535",
+      "input_b": "65535",
+      "expected": "65534"
+    },
+    {
+      "id": "add-u16-07",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "32768",
+      "input_b": "32767",
+      "expected": "65535"
+    },
+    {
+      "id": "add-u16-17",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "49612",
+      "input_b": "50731",
+      "expected": "34807"
+    },
+    {
+      "id": "sub-u16-03",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "65535",
+      "input_b": "65535",
+      "expected": "0"
+    },
+    {
+      "id": "sub-u16-07",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "32768",
+      "input_b": "32767",
+      "expected": "1"
+    },
+    {
+      "id": "sub-u16-17",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "49612",
+      "input_b": "50731",
+      "expected": "64417"
+    },
+    {
+      "id": "mul-u16-03",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "65535",
+      "input_b": "65535",
+      "expected": "1"
+    },
+    {
+      "id": "mul-u16-07",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "32768",
+      "input_b": "32767",
+      "expected": "32768"
+    },
+    {
+      "id": "mul-u16-17",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "49612",
+      "input_b": "50731",
+      "expected": "21828"
+    },
+    {
+      "id": "gt-u16-03",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "65535",
+      "input_b": "65535",
+      "expected": false
+    },
+    {
+      "id": "gt-u16-07",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "32768",
+      "input_b": "32767",
+      "expected": true
+    },
+    {
+      "id": "gt-u16-17",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "49612",
+      "input_b": "50731",
+      "expected": false
+    },
+    {
+      "id": "max-u16-03",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "65535",
+      "input_b": "65535",
+      "expected": "65535"
+    },
+    {
+      "id": "max-u16-07",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "32768",
+      "input_b": "32767",
+      "expected": "32768"
+    },
+    {
+      "id": "max-u16-17",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "49612",
+      "input_b": "50731",
+      "expected": "50731"
+    },
+    {
+      "id": "repeated-u16-03",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "65535",
+      "input_b": "65535",
+      "expected": "2"
+    },
+    {
+      "id": "repeated-u16-07",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "32768",
+      "input_b": "32767",
+      "expected": "0"
+    },
+    {
+      "id": "repeated-u16-17",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "49612",
+      "input_b": "50731",
+      "expected": "43656"
+    },
+    {
+      "id": "add-u32-03",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "4294967295",
+      "input_b": "4294967295",
+      "expected": "4294967294"
+    },
+    {
+      "id": "add-u32-07",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "2147483648",
+      "input_b": "2147483647",
+      "expected": "4294967295"
+    },
+    {
+      "id": "add-u32-17",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "1154772924",
+      "input_b": "1285122395",
+      "expected": "2439895319"
+    },
+    {
+      "id": "sub-u32-03",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "4294967295",
+      "input_b": "4294967295",
+      "expected": "0"
+    },
+    {
+      "id": "sub-u32-07",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "2147483648",
+      "input_b": "2147483647",
+      "expected": "1"
+    },
+    {
+      "id": "sub-u32-17",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "1154772924",
+      "input_b": "1285122395",
+      "expected": "4164617825"
+    },
+    {
+      "id": "mul-u32-03",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "4294967295",
+      "input_b": "4294967295",
+      "expected": "1"
+    },
+    {
+      "id": "mul-u32-07",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "2147483648",
+      "input_b": "2147483647",
+      "expected": "2147483648"
+    },
+    {
+      "id": "mul-u32-17",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "1154772924",
+      "input_b": "1285122395",
+      "expected": "817091540"
+    },
+    {
+      "id": "gt-u32-03",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "4294967295",
+      "input_b": "4294967295",
+      "expected": false
+    },
+    {
+      "id": "gt-u32-07",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "2147483648",
+      "input_b": "2147483647",
+      "expected": true
+    },
+    {
+      "id": "gt-u32-17",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "1154772924",
+      "input_b": "1285122395",
+      "expected": false
+    },
+    {
+      "id": "max-u32-03",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "4294967295",
+      "input_b": "4294967295",
+      "expected": "4294967295"
+    },
+    {
+      "id": "max-u32-07",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "2147483648",
+      "input_b": "2147483647",
+      "expected": "2147483648"
+    },
+    {
+      "id": "max-u32-17",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "1154772924",
+      "input_b": "1285122395",
+      "expected": "1285122395"
+    },
+    {
+      "id": "repeated-u32-03",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "4294967295",
+      "input_b": "4294967295",
+      "expected": "2"
+    },
+    {
+      "id": "repeated-u32-07",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "2147483648",
+      "input_b": "2147483647",
+      "expected": "0"
+    },
+    {
+      "id": "repeated-u32-17",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "1154772924",
+      "input_b": "1285122395",
+      "expected": "1634183080"
+    },
+    {
+      "id": "add-u64-03",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "18446744073709551615",
+      "input_b": "18446744073709551615",
+      "expected": "18446744073709551614"
+    },
+    {
+      "id": "add-u64-07",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "9223372036854775808",
+      "input_b": "9223372036854775807",
+      "expected": "18446744073709551615"
+    },
+    {
+      "id": "add-u64-17",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "16612126113807306332",
+      "input_b": "17629657111232326523",
+      "expected": "15795039151330081239"
+    },
+    {
+      "id": "sub-u64-03",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "18446744073709551615",
+      "input_b": "18446744073709551615",
+      "expected": "0"
+    },
+    {
+      "id": "sub-u64-07",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "9223372036854775808",
+      "input_b": "9223372036854775807",
+      "expected": "1"
+    },
+    {
+      "id": "sub-u64-17",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "16612126113807306332",
+      "input_b": "17629657111232326523",
+      "expected": "17429213076284531425"
+    },
+    {
+      "id": "mul-u64-03",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "18446744073709551615",
+      "input_b": "18446744073709551615",
+      "expected": "1"
+    },
+    {
+      "id": "mul-u64-07",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "9223372036854775808",
+      "input_b": "9223372036854775807",
+      "expected": "9223372036854775808"
+    },
+    {
+      "id": "mul-u64-17",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "16612126113807306332",
+      "input_b": "17629657111232326523",
+      "expected": "12541516782355929652"
+    },
+    {
+      "id": "gt-u64-03",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "18446744073709551615",
+      "input_b": "18446744073709551615",
+      "expected": false
+    },
+    {
+      "id": "gt-u64-07",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "9223372036854775808",
+      "input_b": "9223372036854775807",
+      "expected": true
+    },
+    {
+      "id": "gt-u64-17",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "16612126113807306332",
+      "input_b": "17629657111232326523",
+      "expected": false
+    },
+    {
+      "id": "max-u64-03",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "18446744073709551615",
+      "input_b": "18446744073709551615",
+      "expected": "18446744073709551615"
+    },
+    {
+      "id": "max-u64-07",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "9223372036854775808",
+      "input_b": "9223372036854775807",
+      "expected": "9223372036854775808"
+    },
+    {
+      "id": "max-u64-17",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "16612126113807306332",
+      "input_b": "17629657111232326523",
+      "expected": "17629657111232326523"
+    },
+    {
+      "id": "repeated-u64-03",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "18446744073709551615",
+      "input_b": "18446744073709551615",
+      "expected": "2"
+    },
+    {
+      "id": "repeated-u64-07",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "9223372036854775808",
+      "input_b": "9223372036854775807",
+      "expected": "0"
+    },
+    {
+      "id": "repeated-u64-17",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "16612126113807306332",
+      "input_b": "17629657111232326523",
+      "expected": "6636289491002307688"
+    }
+  ],
+  "disclosure": {
+    "input_values_are_public_demo_vectors": true,
+    "fee_ceiling_covers_only_native_chain_transactions": true,
+    "offchain_fhe_task_fees": "unverified; no cap or estimate asserted",
+    "result_verification": "SDK decryptForView matched to independent plaintext oracle; not independently cryptographically attested",
+    "no_live_transactions_without_separate_explicit_consent": true
+  }
+}

@@ -1,0 +1,7 @@
+fn select_adjusted(a: encrypted<u8>, b: encrypted<u8>) -> encrypted<u8> {
+    return if a > b {
+        (a + b) - b
+    } else {
+        (b + a) - a
+    };
+}

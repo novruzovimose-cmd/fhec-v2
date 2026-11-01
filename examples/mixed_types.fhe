@@ -1,0 +1,7 @@
+fn choose(
+    flag: encrypted<bool>,
+    a: encrypted<u8>,
+    b: encrypted<u8>
+) -> encrypted<u8> {
+    return if flag { a } else { b };
+}

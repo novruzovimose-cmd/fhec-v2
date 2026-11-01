@@ -1,0 +1,2110 @@
+{
+  "schema": "fhec-cofhe-phase10-mock-observations-v1",
+  "evidence_tier": "locally-executed-hardhat-cofhe-mocks-not-live-network",
+  "corpus_sha256": "4913CF9B3758A1561ECC715EA4920170804EAF1B80ACABB5CA2F8662AF8D689C",
+  "source_seal_file_sha256": "721BB33FB4183356CC66351CD210B3CACA201BB9CAB6E964FD526890679E6D11",
+  "corpus_file_sha256": "31DD7911BBA0B22247476847525D216AAA902F6D9ABCF5B1307207F043C78FA0",
+  "cases_expected": 72,
+  "cases_recorded": 72,
+  "variants": [
+    "optimized",
+    "tuned",
+    "straight"
+  ],
+  "full_corpus_completed": true,
+  "records": [
+    {
+      "id": "p10-add-u8-00",
+      "width": 8,
+      "operation": "add",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "293450",
+          "sdk_encrypt_ms": 50,
+          "mock_execution_and_decryption_ms": 80
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "293450",
+          "sdk_encrypt_ms": 20,
+          "mock_execution_and_decryption_ms": 37
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "293345",
+          "sdk_encrypt_ms": 20,
+          "mock_execution_and_decryption_ms": 37
+        }
+      }
+    },
+    {
+      "id": "p10-add-u8-01",
+      "width": 8,
+      "operation": "add",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "276747",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 34
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "276638",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 43
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "276880",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 37
+        }
+      }
+    },
+    {
+      "id": "p10-add-u8-02",
+      "width": 8,
+      "operation": "add",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "276771",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "276638",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 43
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "276868",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 38
+        }
+      }
+    },
+    {
+      "id": "p10-sub-u8-00",
+      "width": 8,
+      "operation": "sub",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "274928",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 35
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "274912",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 51
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "274755",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 31
+        }
+      }
+    },
+    {
+      "id": "p10-sub-u8-01",
+      "width": 8,
+      "operation": "sub",
+      "expected": "254",
+      "variants": {
+        "optimized": {
+          "actual": "254",
+          "oracle_match": true,
+          "mock_transaction_gas": "295515",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 29
+        },
+        "tuned": {
+          "actual": "254",
+          "oracle_match": true,
+          "mock_transaction_gas": "295132",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 30
+        },
+        "straight": {
+          "actual": "254",
+          "oracle_match": true,
+          "mock_transaction_gas": "295249",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 29
+        }
+      }
+    },
+    {
+      "id": "p10-sub-u8-02",
+      "width": 8,
+      "operation": "sub",
+      "expected": "2",
+      "variants": {
+        "optimized": {
+          "actual": "2",
+          "oracle_match": true,
+          "mock_transaction_gas": "294992",
+          "sdk_encrypt_ms": 18,
+          "mock_execution_and_decryption_ms": 30
+        },
+        "tuned": {
+          "actual": "2",
+          "oracle_match": true,
+          "mock_transaction_gas": "294968",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 27
+        },
+        "straight": {
+          "actual": "2",
+          "oracle_match": true,
+          "mock_transaction_gas": "294964",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 29
+        }
+      }
+    },
+    {
+      "id": "p10-mul-u8-00",
+      "width": 8,
+      "operation": "mul",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "288044",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 31
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "288032",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "288165",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 29
+        }
+      }
+    },
+    {
+      "id": "p10-mul-u8-01",
+      "width": 8,
+      "operation": "mul",
+      "expected": "255",
+      "variants": {
+        "optimized": {
+          "actual": "255",
+          "oracle_match": true,
+          "mock_transaction_gas": "308514",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 31
+        },
+        "tuned": {
+          "actual": "255",
+          "oracle_match": true,
+          "mock_transaction_gas": "308647",
+          "sdk_encrypt_ms": 18,
+          "mock_execution_and_decryption_ms": 37
+        },
+        "straight": {
+          "actual": "255",
+          "oracle_match": true,
+          "mock_transaction_gas": "308647",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 33
+        }
+      }
+    },
+    {
+      "id": "p10-mul-u8-02",
+      "width": 8,
+      "operation": "mul",
+      "expected": "255",
+      "variants": {
+        "optimized": {
+          "actual": "255",
+          "oracle_match": true,
+          "mock_transaction_gas": "308316",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 37
+        },
+        "tuned": {
+          "actual": "255",
+          "oracle_match": true,
+          "mock_transaction_gas": "308554",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 41
+        },
+        "straight": {
+          "actual": "255",
+          "oracle_match": true,
+          "mock_transaction_gas": "308647",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 36
+        }
+      }
+    },
+    {
+      "id": "p10-gt-u8-00",
+      "width": 8,
+      "operation": "gt",
+      "expected": "false",
+      "variants": {
+        "optimized": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "318594",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 31
+        },
+        "tuned": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "318820",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 36
+        },
+        "straight": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "318965",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 31
+        }
+      }
+    },
+    {
+      "id": "p10-gt-u8-01",
+      "width": 8,
+      "operation": "gt",
+      "expected": "true",
+      "variants": {
+        "optimized": {
+          "actual": "true",
+          "oracle_match": true,
+          "mock_transaction_gas": "322140",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 46
+        },
+        "tuned": {
+          "actual": "true",
+          "oracle_match": true,
+          "mock_transaction_gas": "321636",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 36
+        },
+        "straight": {
+          "actual": "true",
+          "oracle_match": true,
+          "mock_transaction_gas": "321898",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 39
+        }
+      }
+    },
+    {
+      "id": "p10-gt-u8-02",
+      "width": 8,
+      "operation": "gt",
+      "expected": "false",
+      "variants": {
+        "optimized": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "302005",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 34
+        },
+        "tuned": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "301993",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 57
+        },
+        "straight": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "302005",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 28
+        }
+      }
+    },
+    {
+      "id": "p10-max-u8-00",
+      "width": 8,
+      "operation": "max",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "440222",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 35
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "440408",
+          "sdk_encrypt_ms": 18,
+          "mock_execution_and_decryption_ms": 37
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "440420",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 33
+        }
+      }
+    },
+    {
+      "id": "p10-max-u8-01",
+      "width": 8,
+      "operation": "max",
+      "expected": "255",
+      "variants": {
+        "optimized": {
+          "actual": "255",
+          "oracle_match": true,
+          "mock_transaction_gas": "481314",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 30
+        },
+        "tuned": {
+          "actual": "255",
+          "oracle_match": true,
+          "mock_transaction_gas": "481145",
+          "sdk_encrypt_ms": 19,
+          "mock_execution_and_decryption_ms": 37
+        },
+        "straight": {
+          "actual": "255",
+          "oracle_match": true,
+          "mock_transaction_gas": "481169",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 33
+        }
+      }
+    },
+    {
+      "id": "p10-max-u8-02",
+      "width": 8,
+      "operation": "max",
+      "expected": "255",
+      "variants": {
+        "optimized": {
+          "actual": "255",
+          "oracle_match": true,
+          "mock_transaction_gas": "461453",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 36
+        },
+        "tuned": {
+          "actual": "255",
+          "oracle_match": true,
+          "mock_transaction_gas": "461429",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 33
+        },
+        "straight": {
+          "actual": "255",
+          "oracle_match": true,
+          "mock_transaction_gas": "461707",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 33
+        }
+      }
+    },
+    {
+      "id": "p10-repeated-u8-00",
+      "width": 8,
+      "operation": "repeated",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "405355",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 39
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "405464",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 35
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "505292",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 34
+        }
+      }
+    },
+    {
+      "id": "p10-repeated-u8-01",
+      "width": 8,
+      "operation": "repeated",
+      "expected": "254",
+      "variants": {
+        "optimized": {
+          "actual": "254",
+          "oracle_match": true,
+          "mock_transaction_gas": "446611",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 33
+        },
+        "tuned": {
+          "actual": "254",
+          "oracle_match": true,
+          "mock_transaction_gas": "446716",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 31
+        },
+        "straight": {
+          "actual": "254",
+          "oracle_match": true,
+          "mock_transaction_gas": "547941",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 32
+        }
+      }
+    },
+    {
+      "id": "p10-repeated-u8-02",
+      "width": 8,
+      "operation": "repeated",
+      "expected": "254",
+      "variants": {
+        "optimized": {
+          "actual": "254",
+          "oracle_match": true,
+          "mock_transaction_gas": "446958",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "tuned": {
+          "actual": "254",
+          "oracle_match": true,
+          "mock_transaction_gas": "446958",
+          "sdk_encrypt_ms": 14,
+          "mock_execution_and_decryption_ms": 33
+        },
+        "straight": {
+          "actual": "254",
+          "oracle_match": true,
+          "mock_transaction_gas": "548574",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 35
+        }
+      }
+    },
+    {
+      "id": "p10-add-u16-00",
+      "width": 16,
+      "operation": "add",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "293820",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 26
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "293796",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 27
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "293675",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 31
+        }
+      }
+    },
+    {
+      "id": "p10-add-u16-01",
+      "width": 16,
+      "operation": "add",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "277110",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 25
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "277243",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 28
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "277098",
+          "sdk_encrypt_ms": 44,
+          "mock_execution_and_decryption_ms": 57
+        }
+      }
+    },
+    {
+      "id": "p10-add-u16-02",
+      "width": 16,
+      "operation": "add",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "277364",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 28
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "277098",
+          "sdk_encrypt_ms": 18,
+          "mock_execution_and_decryption_ms": 33
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "277110",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 28
+        }
+      }
+    },
+    {
+      "id": "p10-sub-u16-00",
+      "width": 16,
+      "operation": "sub",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "275001",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 27
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "274989",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 27
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "275146",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 27
+        }
+      }
+    },
+    {
+      "id": "p10-sub-u16-01",
+      "width": 16,
+      "operation": "sub",
+      "expected": "65534",
+      "variants": {
+        "optimized": {
+          "actual": "65534",
+          "oracle_match": true,
+          "mock_transaction_gas": "295963",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 27
+        },
+        "tuned": {
+          "actual": "65534",
+          "oracle_match": true,
+          "mock_transaction_gas": "295939",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 33
+        },
+        "straight": {
+          "actual": "65534",
+          "oracle_match": true,
+          "mock_transaction_gas": "295939",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 107
+        }
+      }
+    },
+    {
+      "id": "p10-sub-u16-02",
+      "width": 16,
+      "operation": "sub",
+      "expected": "2",
+      "variants": {
+        "optimized": {
+          "actual": "2",
+          "oracle_match": true,
+          "mock_transaction_gas": "295561",
+          "sdk_encrypt_ms": 14,
+          "mock_execution_and_decryption_ms": 29
+        },
+        "tuned": {
+          "actual": "2",
+          "oracle_match": true,
+          "mock_transaction_gas": "295444",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "straight": {
+          "actual": "2",
+          "oracle_match": true,
+          "mock_transaction_gas": "295404",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 31
+        }
+      }
+    },
+    {
+      "id": "p10-mul-u16-00",
+      "width": 16,
+      "operation": "mul",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "288161",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 29
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "288185",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 30
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "288185",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 31
+        }
+      }
+    },
+    {
+      "id": "p10-mul-u16-01",
+      "width": 16,
+      "operation": "mul",
+      "expected": "65535",
+      "variants": {
+        "optimized": {
+          "actual": "65535",
+          "oracle_match": true,
+          "mock_transaction_gas": "309119",
+          "sdk_encrypt_ms": 18,
+          "mock_execution_and_decryption_ms": 38
+        },
+        "tuned": {
+          "actual": "65535",
+          "oracle_match": true,
+          "mock_transaction_gas": "309119",
+          "sdk_encrypt_ms": 20,
+          "mock_execution_and_decryption_ms": 37
+        },
+        "straight": {
+          "actual": "65535",
+          "oracle_match": true,
+          "mock_transaction_gas": "309369",
+          "sdk_encrypt_ms": 19,
+          "mock_execution_and_decryption_ms": 39
+        }
+      }
+    },
+    {
+      "id": "p10-mul-u16-02",
+      "width": 16,
+      "operation": "mul",
+      "expected": "65535",
+      "variants": {
+        "optimized": {
+          "actual": "65535",
+          "oracle_match": true,
+          "mock_transaction_gas": "309236",
+          "sdk_encrypt_ms": 23,
+          "mock_execution_and_decryption_ms": 47
+        },
+        "tuned": {
+          "actual": "65535",
+          "oracle_match": true,
+          "mock_transaction_gas": "309357",
+          "sdk_encrypt_ms": 18,
+          "mock_execution_and_decryption_ms": 37
+        },
+        "straight": {
+          "actual": "65535",
+          "oracle_match": true,
+          "mock_transaction_gas": "309236",
+          "sdk_encrypt_ms": 23,
+          "mock_execution_and_decryption_ms": 38
+        }
+      }
+    },
+    {
+      "id": "p10-gt-u16-00",
+      "width": 16,
+      "operation": "gt",
+      "expected": "false",
+      "variants": {
+        "optimized": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "318995",
+          "sdk_encrypt_ms": 18,
+          "mock_execution_and_decryption_ms": 40
+        },
+        "tuned": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "318866",
+          "sdk_encrypt_ms": 19,
+          "mock_execution_and_decryption_ms": 44
+        },
+        "straight": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "319104",
+          "sdk_encrypt_ms": 27,
+          "mock_execution_and_decryption_ms": 63
+        }
+      }
+    },
+    {
+      "id": "p10-gt-u16-01",
+      "width": 16,
+      "operation": "gt",
+      "expected": "true",
+      "variants": {
+        "optimized": {
+          "actual": "true",
+          "oracle_match": true,
+          "mock_transaction_gas": "322302",
+          "sdk_encrypt_ms": 19,
+          "mock_execution_and_decryption_ms": 35
+        },
+        "tuned": {
+          "actual": "true",
+          "oracle_match": true,
+          "mock_transaction_gas": "322173",
+          "sdk_encrypt_ms": 21,
+          "mock_execution_and_decryption_ms": 41
+        },
+        "straight": {
+          "actual": "true",
+          "oracle_match": true,
+          "mock_transaction_gas": "322435",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 31
+        }
+      }
+    },
+    {
+      "id": "p10-gt-u16-02",
+      "width": 16,
+      "operation": "gt",
+      "expected": "false",
+      "variants": {
+        "optimized": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "302554",
+          "sdk_encrypt_ms": 19,
+          "mock_execution_and_decryption_ms": 40
+        },
+        "tuned": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "302554",
+          "sdk_encrypt_ms": 20,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "straight": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "302316",
+          "sdk_encrypt_ms": 18,
+          "mock_execution_and_decryption_ms": 33
+        }
+      }
+    },
+    {
+      "id": "p10-max-u16-00",
+      "width": 16,
+      "operation": "max",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "440549",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 34
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "440642",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 36
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "440432",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 34
+        }
+      }
+    },
+    {
+      "id": "p10-max-u16-01",
+      "width": 16,
+      "operation": "max",
+      "expected": "65535",
+      "variants": {
+        "optimized": {
+          "actual": "65535",
+          "oracle_match": true,
+          "mock_transaction_gas": "482080",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 31
+        },
+        "tuned": {
+          "actual": "65535",
+          "oracle_match": true,
+          "mock_transaction_gas": "482092",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "straight": {
+          "actual": "65535",
+          "oracle_match": true,
+          "mock_transaction_gas": "482346",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 33
+        }
+      }
+    },
+    {
+      "id": "p10-max-u16-02",
+      "width": 16,
+      "operation": "max",
+      "expected": "65535",
+      "variants": {
+        "optimized": {
+          "actual": "65535",
+          "oracle_match": true,
+          "mock_transaction_gas": "462243",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "tuned": {
+          "actual": "65535",
+          "oracle_match": true,
+          "mock_transaction_gas": "462396",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 33
+        },
+        "straight": {
+          "actual": "65535",
+          "oracle_match": true,
+          "mock_transaction_gas": "462485",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 34
+        }
+      }
+    },
+    {
+      "id": "p10-repeated-u16-00",
+      "width": 16,
+      "operation": "repeated",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "405802",
+          "sdk_encrypt_ms": 24,
+          "mock_execution_and_decryption_ms": 45
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "405790",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 38
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "507167",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 35
+        }
+      }
+    },
+    {
+      "id": "p10-repeated-u16-01",
+      "width": 16,
+      "operation": "repeated",
+      "expected": "65534",
+      "variants": {
+        "optimized": {
+          "actual": "65534",
+          "oracle_match": true,
+          "mock_transaction_gas": "448483",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 35
+        },
+        "tuned": {
+          "actual": "65534",
+          "oracle_match": true,
+          "mock_transaction_gas": "448459",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "straight": {
+          "actual": "65534",
+          "oracle_match": true,
+          "mock_transaction_gas": "550523",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 35
+        }
+      }
+    },
+    {
+      "id": "p10-repeated-u16-02",
+      "width": 16,
+      "operation": "repeated",
+      "expected": "65534",
+      "variants": {
+        "optimized": {
+          "actual": "65534",
+          "oracle_match": true,
+          "mock_transaction_gas": "448112",
+          "sdk_encrypt_ms": 14,
+          "mock_execution_and_decryption_ms": 31
+        },
+        "tuned": {
+          "actual": "65534",
+          "oracle_match": true,
+          "mock_transaction_gas": "448193",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 34
+        },
+        "straight": {
+          "actual": "65534",
+          "oracle_match": true,
+          "mock_transaction_gas": "549942",
+          "sdk_encrypt_ms": 18,
+          "mock_execution_and_decryption_ms": 39
+        }
+      }
+    },
+    {
+      "id": "p10-add-u32-00",
+      "width": 32,
+      "operation": "add",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "293957",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 51
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "293929",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 28
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "293917",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 28
+        }
+      }
+    },
+    {
+      "id": "p10-add-u32-01",
+      "width": 32,
+      "operation": "add",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "277949",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 27
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "278094",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 30
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "277989",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 26
+        }
+      }
+    },
+    {
+      "id": "p10-add-u32-02",
+      "width": 32,
+      "operation": "add",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "278082",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 27
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "277949",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 28
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "277949",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 27
+        }
+      }
+    },
+    {
+      "id": "p10-sub-u32-00",
+      "width": 32,
+      "operation": "sub",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "275255",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "275267",
+          "sdk_encrypt_ms": 18,
+          "mock_execution_and_decryption_ms": 39
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "275364",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 30
+        }
+      }
+    },
+    {
+      "id": "p10-sub-u32-01",
+      "width": 32,
+      "operation": "sub",
+      "expected": "4294967294",
+      "variants": {
+        "optimized": {
+          "actual": "4294967294",
+          "oracle_match": true,
+          "mock_transaction_gas": "297451",
+          "sdk_encrypt_ms": 20,
+          "mock_execution_and_decryption_ms": 38
+        },
+        "tuned": {
+          "actual": "4294967294",
+          "oracle_match": true,
+          "mock_transaction_gas": "297463",
+          "sdk_encrypt_ms": 21,
+          "mock_execution_and_decryption_ms": 37
+        },
+        "straight": {
+          "actual": "4294967294",
+          "oracle_match": true,
+          "mock_transaction_gas": "297411",
+          "sdk_encrypt_ms": 19,
+          "mock_execution_and_decryption_ms": 34
+        }
+      }
+    },
+    {
+      "id": "p10-sub-u32-02",
+      "width": 32,
+      "operation": "sub",
+      "expected": "2",
+      "variants": {
+        "optimized": {
+          "actual": "2",
+          "oracle_match": true,
+          "mock_transaction_gas": "296198",
+          "sdk_encrypt_ms": 18,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "tuned": {
+          "actual": "2",
+          "oracle_match": true,
+          "mock_transaction_gas": "296198",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 31
+        },
+        "straight": {
+          "actual": "2",
+          "oracle_match": true,
+          "mock_transaction_gas": "296186",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 29
+        }
+      }
+    },
+    {
+      "id": "p10-mul-u32-00",
+      "width": 32,
+      "operation": "mul",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "288665",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "288677",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 30
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "288544",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 28
+        }
+      }
+    },
+    {
+      "id": "p10-mul-u32-01",
+      "width": 32,
+      "operation": "mul",
+      "expected": "4294967295",
+      "variants": {
+        "optimized": {
+          "actual": "4294967295",
+          "oracle_match": true,
+          "mock_transaction_gas": "310832",
+          "sdk_encrypt_ms": 14,
+          "mock_execution_and_decryption_ms": 28
+        },
+        "tuned": {
+          "actual": "4294967295",
+          "oracle_match": true,
+          "mock_transaction_gas": "310699",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 34
+        },
+        "straight": {
+          "actual": "4294967295",
+          "oracle_match": true,
+          "mock_transaction_gas": "310844",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 28
+        }
+      }
+    },
+    {
+      "id": "p10-mul-u32-02",
+      "width": 32,
+      "operation": "mul",
+      "expected": "4294967295",
+      "variants": {
+        "optimized": {
+          "actual": "4294967295",
+          "oracle_match": true,
+          "mock_transaction_gas": "310699",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "tuned": {
+          "actual": "4294967295",
+          "oracle_match": true,
+          "mock_transaction_gas": "310594",
+          "sdk_encrypt_ms": 18,
+          "mock_execution_and_decryption_ms": 44
+        },
+        "straight": {
+          "actual": "4294967295",
+          "oracle_match": true,
+          "mock_transaction_gas": "310711",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 30
+        }
+      }
+    },
+    {
+      "id": "p10-gt-u32-00",
+      "width": 32,
+      "operation": "gt",
+      "expected": "false",
+      "variants": {
+        "optimized": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "319179",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 28
+        },
+        "tuned": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "319167",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 29
+        },
+        "straight": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "319195",
+          "sdk_encrypt_ms": 14,
+          "mock_execution_and_decryption_ms": 25
+        }
+      }
+    },
+    {
+      "id": "p10-gt-u32-01",
+      "width": 32,
+      "operation": "gt",
+      "expected": "true",
+      "variants": {
+        "optimized": {
+          "actual": "true",
+          "oracle_match": true,
+          "mock_transaction_gas": "323095",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 28
+        },
+        "tuned": {
+          "actual": "true",
+          "oracle_match": true,
+          "mock_transaction_gas": "323095",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 28
+        },
+        "straight": {
+          "actual": "true",
+          "oracle_match": true,
+          "mock_transaction_gas": "323095",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 29
+        }
+      }
+    },
+    {
+      "id": "p10-gt-u32-02",
+      "width": 32,
+      "operation": "gt",
+      "expected": "false",
+      "variants": {
+        "optimized": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "303097",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 28
+        },
+        "tuned": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "303230",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 27
+        },
+        "straight": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "303456",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 27
+        }
+      }
+    },
+    {
+      "id": "p10-max-u32-00",
+      "width": 32,
+      "operation": "max",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "440920",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 34
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "441106",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 35
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "441094",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 33
+        }
+      }
+    },
+    {
+      "id": "p10-max-u32-01",
+      "width": 32,
+      "operation": "max",
+      "expected": "4294967295",
+      "variants": {
+        "optimized": {
+          "actual": "4294967295",
+          "oracle_match": true,
+          "mock_transaction_gas": "484801",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 33
+        },
+        "tuned": {
+          "actual": "4294967295",
+          "oracle_match": true,
+          "mock_transaction_gas": "483954",
+          "sdk_encrypt_ms": 14,
+          "mock_execution_and_decryption_ms": 29
+        },
+        "straight": {
+          "actual": "4294967295",
+          "oracle_match": true,
+          "mock_transaction_gas": "484535",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 34
+        }
+      }
+    },
+    {
+      "id": "p10-max-u32-02",
+      "width": 32,
+      "operation": "max",
+      "expected": "4294967295",
+      "variants": {
+        "optimized": {
+          "actual": "4294967295",
+          "oracle_match": true,
+          "mock_transaction_gas": "464432",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 33
+        },
+        "tuned": {
+          "actual": "4294967295",
+          "oracle_match": true,
+          "mock_transaction_gas": "464408",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 34
+        },
+        "straight": {
+          "actual": "4294967295",
+          "oracle_match": true,
+          "mock_transaction_gas": "464464",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 35
+        }
+      }
+    },
+    {
+      "id": "p10-repeated-u32-00",
+      "width": 32,
+      "operation": "repeated",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "406254",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "406125",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 33
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "507575",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 34
+        }
+      }
+    },
+    {
+      "id": "p10-repeated-u32-01",
+      "width": 32,
+      "operation": "repeated",
+      "expected": "4294967294",
+      "variants": {
+        "optimized": {
+          "actual": "4294967294",
+          "oracle_match": true,
+          "mock_transaction_gas": "452264",
+          "sdk_encrypt_ms": 14,
+          "mock_execution_and_decryption_ms": 31
+        },
+        "tuned": {
+          "actual": "4294967294",
+          "oracle_match": true,
+          "mock_transaction_gas": "451853",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 33
+        },
+        "straight": {
+          "actual": "4294967294",
+          "oracle_match": true,
+          "mock_transaction_gas": "555086",
+          "sdk_encrypt_ms": 40,
+          "mock_execution_and_decryption_ms": 63
+        }
+      }
+    },
+    {
+      "id": "p10-repeated-u32-02",
+      "width": 32,
+      "operation": "repeated",
+      "expected": "4294967294",
+      "variants": {
+        "optimized": {
+          "actual": "4294967294",
+          "oracle_match": true,
+          "mock_transaction_gas": "451732",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "tuned": {
+          "actual": "4294967294",
+          "oracle_match": true,
+          "mock_transaction_gas": "452107",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 34
+        },
+        "straight": {
+          "actual": "4294967294",
+          "oracle_match": true,
+          "mock_transaction_gas": "555550",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 34
+        }
+      }
+    },
+    {
+      "id": "p10-add-u64-00",
+      "width": 64,
+      "operation": "add",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "294372",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 26
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "294094",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 30
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "294094",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 26
+        }
+      }
+    },
+    {
+      "id": "p10-add-u64-01",
+      "width": 64,
+      "operation": "add",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "279381",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 25
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "279381",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 25
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "279357",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 25
+        }
+      }
+    },
+    {
+      "id": "p10-add-u64-02",
+      "width": 64,
+      "operation": "add",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "279381",
+          "sdk_encrypt_ms": 14,
+          "mock_execution_and_decryption_ms": 26
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "279514",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 30
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "279276",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 29
+        }
+      }
+    },
+    {
+      "id": "p10-sub-u64-00",
+      "width": 64,
+      "operation": "sub",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "275408",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 28
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "275553",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 31
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "275436",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 28
+        }
+      }
+    },
+    {
+      "id": "p10-sub-u64-01",
+      "width": 64,
+      "operation": "sub",
+      "expected": "18446744073709551614",
+      "variants": {
+        "optimized": {
+          "actual": "18446744073709551614",
+          "oracle_match": true,
+          "mock_transaction_gas": "300189",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 29
+        },
+        "tuned": {
+          "actual": "18446744073709551614",
+          "oracle_match": true,
+          "mock_transaction_gas": "300068",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 29
+        },
+        "straight": {
+          "actual": "18446744073709551614",
+          "oracle_match": true,
+          "mock_transaction_gas": "300080",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 29
+        }
+      }
+    },
+    {
+      "id": "p10-sub-u64-02",
+      "width": 64,
+      "operation": "sub",
+      "expected": "2",
+      "variants": {
+        "optimized": {
+          "actual": "2",
+          "oracle_match": true,
+          "mock_transaction_gas": "297820",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 28
+        },
+        "tuned": {
+          "actual": "2",
+          "oracle_match": true,
+          "mock_transaction_gas": "297711",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 29
+        },
+        "straight": {
+          "actual": "2",
+          "oracle_match": true,
+          "mock_transaction_gas": "297832",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 29
+        }
+      }
+    },
+    {
+      "id": "p10-mul-u64-00",
+      "width": 64,
+      "operation": "mul",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "288580",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 29
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "288459",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 30
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "288604",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 35
+        }
+      }
+    },
+    {
+      "id": "p10-mul-u64-01",
+      "width": 64,
+      "operation": "mul",
+      "expected": "18446744073709551615",
+      "variants": {
+        "optimized": {
+          "actual": "18446744073709551615",
+          "oracle_match": true,
+          "mock_transaction_gas": "313240",
+          "sdk_encrypt_ms": 37,
+          "mock_execution_and_decryption_ms": 51
+        },
+        "tuned": {
+          "actual": "18446744073709551615",
+          "oracle_match": true,
+          "mock_transaction_gas": "313333",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 31
+        },
+        "straight": {
+          "actual": "18446744073709551615",
+          "oracle_match": true,
+          "mock_transaction_gas": "313252",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 30
+        }
+      }
+    },
+    {
+      "id": "p10-mul-u64-02",
+      "width": 64,
+      "operation": "mul",
+      "expected": "18446744073709551615",
+      "variants": {
+        "optimized": {
+          "actual": "18446744073709551615",
+          "oracle_match": true,
+          "mock_transaction_gas": "313357",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 29
+        },
+        "tuned": {
+          "actual": "18446744073709551615",
+          "oracle_match": true,
+          "mock_transaction_gas": "313345",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 30
+        },
+        "straight": {
+          "actual": "18446744073709551615",
+          "oracle_match": true,
+          "mock_transaction_gas": "312943",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 26
+        }
+      }
+    },
+    {
+      "id": "p10-gt-u64-00",
+      "width": 64,
+      "operation": "gt",
+      "expected": "false",
+      "variants": {
+        "optimized": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "319274",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 26
+        },
+        "tuned": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "319185",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 27
+        },
+        "straight": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "319383",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 27
+        }
+      }
+    },
+    {
+      "id": "p10-gt-u64-01",
+      "width": 64,
+      "operation": "gt",
+      "expected": "true",
+      "variants": {
+        "optimized": {
+          "actual": "true",
+          "oracle_match": true,
+          "mock_transaction_gas": "324434",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 29
+        },
+        "tuned": {
+          "actual": "true",
+          "oracle_match": true,
+          "mock_transaction_gas": "324329",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 27
+        },
+        "straight": {
+          "actual": "true",
+          "oracle_match": true,
+          "mock_transaction_gas": "324422",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 31
+        }
+      }
+    },
+    {
+      "id": "p10-gt-u64-02",
+      "width": 64,
+      "operation": "gt",
+      "expected": "false",
+      "variants": {
+        "optimized": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "304541",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 28
+        },
+        "tuned": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "304686",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 31
+        },
+        "straight": {
+          "actual": "false",
+          "oracle_match": true,
+          "mock_transaction_gas": "304553",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 34
+        }
+      }
+    },
+    {
+      "id": "p10-max-u64-00",
+      "width": 64,
+      "operation": "max",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "441521",
+          "sdk_encrypt_ms": 18,
+          "mock_execution_and_decryption_ms": 39
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "441388",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 83
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "441509",
+          "sdk_encrypt_ms": 17,
+          "mock_execution_and_decryption_ms": 36
+        }
+      }
+    },
+    {
+      "id": "p10-max-u64-01",
+      "width": 64,
+      "operation": "max",
+      "expected": "18446744073709551615",
+      "variants": {
+        "optimized": {
+          "actual": "18446744073709551615",
+          "oracle_match": true,
+          "mock_transaction_gas": "488078",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 32
+        },
+        "tuned": {
+          "actual": "18446744073709551615",
+          "oracle_match": true,
+          "mock_transaction_gas": "488026",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 35
+        },
+        "straight": {
+          "actual": "18446744073709551615",
+          "oracle_match": true,
+          "mock_transaction_gas": "488264",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 30
+        }
+      }
+    },
+    {
+      "id": "p10-max-u64-02",
+      "width": 64,
+      "operation": "max",
+      "expected": "18446744073709551615",
+      "variants": {
+        "optimized": {
+          "actual": "18446744073709551615",
+          "oracle_match": true,
+          "mock_transaction_gas": "468338",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 38
+        },
+        "tuned": {
+          "actual": "18446744073709551615",
+          "oracle_match": true,
+          "mock_transaction_gas": "468326",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 50
+        },
+        "straight": {
+          "actual": "18446744073709551615",
+          "oracle_match": true,
+          "mock_transaction_gas": "468153",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 38
+        }
+      }
+    },
+    {
+      "id": "p10-repeated-u64-00",
+      "width": 64,
+      "operation": "repeated",
+      "expected": "0",
+      "variants": {
+        "optimized": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "406536",
+          "sdk_encrypt_ms": 18,
+          "mock_execution_and_decryption_ms": 35
+        },
+        "tuned": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "406617",
+          "sdk_encrypt_ms": 36,
+          "mock_execution_and_decryption_ms": 58
+        },
+        "straight": {
+          "actual": "0",
+          "oracle_match": true,
+          "mock_transaction_gas": "507994",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 38
+        }
+      }
+    },
+    {
+      "id": "p10-repeated-u64-01",
+      "width": 64,
+      "operation": "repeated",
+      "expected": "18446744073709551614",
+      "variants": {
+        "optimized": {
+          "actual": "18446744073709551614",
+          "oracle_match": true,
+          "mock_transaction_gas": "458445",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 34
+        },
+        "tuned": {
+          "actual": "18446744073709551614",
+          "oracle_match": true,
+          "mock_transaction_gas": "458300",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 33
+        },
+        "straight": {
+          "actual": "18446744073709551614",
+          "oracle_match": true,
+          "mock_transaction_gas": "564712",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 36
+        }
+      }
+    },
+    {
+      "id": "p10-repeated-u64-02",
+      "width": 64,
+      "operation": "repeated",
+      "expected": "18446744073709551614",
+      "variants": {
+        "optimized": {
+          "actual": "18446744073709551614",
+          "oracle_match": true,
+          "mock_transaction_gas": "458235",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 33
+        },
+        "tuned": {
+          "actual": "18446744073709551614",
+          "oracle_match": true,
+          "mock_transaction_gas": "458699",
+          "sdk_encrypt_ms": 15,
+          "mock_execution_and_decryption_ms": 36
+        },
+        "straight": {
+          "actual": "18446744073709551614",
+          "oracle_match": true,
+          "mock_transaction_gas": "565111",
+          "sdk_encrypt_ms": 16,
+          "mock_execution_and_decryption_ms": 32
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Mock gas is not production or testnet gas",
+    "SDK mock decryption is not independent cryptographic verification",
+    "Boundary and pseudorandom sampling is not exhaustive formal verification"
+  ]
+}

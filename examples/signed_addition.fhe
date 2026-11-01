@@ -1,0 +1,6 @@
+fn add_signed(
+    a: encrypted<i8>,
+    b: encrypted<i8>
+) -> encrypted<i8> {
+    return a + b;
+}

@@ -1,0 +1,112 @@
+fn add_u8(a: encrypted<u8>, b: encrypted<u8>) -> encrypted<u8> {
+    return a + b;
+}
+
+fn sub_u8(a: encrypted<u8>, b: encrypted<u8>) -> encrypted<u8> {
+    return a - b;
+}
+
+fn mul_u8(a: encrypted<u8>, b: encrypted<u8>) -> encrypted<u8> {
+    return a * b;
+}
+
+fn gt_u8(a: encrypted<u8>, b: encrypted<u8>) -> encrypted<bool> {
+    return a > b;
+}
+
+fn max_u8(a: encrypted<u8>, b: encrypted<u8>) -> encrypted<u8> {
+    return if a > b { a } else { b };
+}
+
+fn repeated_u8(a: encrypted<u8>, b: encrypted<u8>) -> encrypted<u8> {
+    let left = a * b;
+    let right = a * b;
+    return left + right;
+}
+
+fn add_u16(a: encrypted<u16>, b: encrypted<u16>) -> encrypted<u16> {
+    return a + b;
+}
+
+fn sub_u16(a: encrypted<u16>, b: encrypted<u16>) -> encrypted<u16> {
+    return a - b;
+}
+
+fn mul_u16(a: encrypted<u16>, b: encrypted<u16>) -> encrypted<u16> {
+    return a * b;
+}
+
+fn gt_u16(a: encrypted<u16>, b: encrypted<u16>) -> encrypted<bool> {
+    return a > b;
+}
+
+fn max_u16(a: encrypted<u16>, b: encrypted<u16>) -> encrypted<u16> {
+    return if a > b { a } else { b };
+}
+
+fn repeated_u16(a: encrypted<u16>, b: encrypted<u16>) -> encrypted<u16> {
+    let left = a * b;
+    let right = a * b;
+    return left + right;
+}
+
+fn add_u32(a: encrypted<u32>, b: encrypted<u32>) -> encrypted<u32> {
+    return a + b;
+}
+
+fn sub_u32(a: encrypted<u32>, b: encrypted<u32>) -> encrypted<u32> {
+    return a - b;
+}
+
+fn mul_u32(a: encrypted<u32>, b: encrypted<u32>) -> encrypted<u32> {
+    return a * b;
+}
+
+fn gt_u32(a: encrypted<u32>, b: encrypted<u32>) -> encrypted<bool> {
+    return a > b;
+}
+
+fn max_u32(a: encrypted<u32>, b: encrypted<u32>) -> encrypted<u32> {
+    return if a > b { a } else { b };
+}
+
+fn repeated_u32(a: encrypted<u32>, b: encrypted<u32>) -> encrypted<u32> {
+    let left = a * b;
+    let right = a * b;
+    return left + right;
+}
+
+fn add_u64(a: encrypted<u64>, b: encrypted<u64>) -> encrypted<u64> {
+    return a + b;
+}
+
+fn sub_u64(a: encrypted<u64>, b: encrypted<u64>) -> encrypted<u64> {
+    return a - b;
+}
+
+fn mul_u64(a: encrypted<u64>, b: encrypted<u64>) -> encrypted<u64> {
+    return a * b;
+}
+
+fn gt_u64(a: encrypted<u64>, b: encrypted<u64>) -> encrypted<bool> {
+    return a > b;
+}
+
+fn max_u64(a: encrypted<u64>, b: encrypted<u64>) -> encrypted<u64> {
+    return if a > b { a } else { b };
+}
+
+fn repeated_u64(a: encrypted<u64>, b: encrypted<u64>) -> encrypted<u64> {
+    let left = a * b;
+    let right = a * b;
+    return left + right;
+}
+
+fn twice_u8(a: encrypted<u8>) -> encrypted<u8> {
+    return a + a;
+}
+
+fn four_times_u8(a: encrypted<u8>) -> encrypted<u8> {
+    let doubled = twice_u8(a);
+    return twice_u8(doubled);
+}

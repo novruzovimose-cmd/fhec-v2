@@ -1,0 +1,16 @@
+[package]
+name = "fhec-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+fhec-runtime = { path = "../fhec-runtime" }
+fhec-backend-tfhe = { path = "../fhec-backend-tfhe" }
+fhec-backend = { path = "../fhec-backend" }
+fhec-analyzer = { path = "../fhec-analyzer" }
+fhec-compiler = { path = "../fhec-compiler" }
+fhec-frontend = { path = "../fhec-frontend" }
+fhec-backend-cofhe = { path = "../fhec-backend-cofhe" }

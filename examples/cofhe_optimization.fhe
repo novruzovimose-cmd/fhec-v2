@@ -1,0 +1,17 @@
+fn add_identity(a: encrypted<u8>) -> encrypted<u8> {
+    return a + 0;
+}
+
+fn multiply_identity(a: encrypted<u16>) -> encrypted<u16> {
+    return a * 1;
+}
+
+fn select_same(flag: encrypted<bool>, a: encrypted<u8>) -> encrypted<u8> {
+    return if flag { a } else { a };
+}
+
+fn repeated(a: encrypted<u8>, b: encrypted<u8>) -> encrypted<u8> {
+    let first = a * b;
+    let second = a * b;
+    return first + second;
+}

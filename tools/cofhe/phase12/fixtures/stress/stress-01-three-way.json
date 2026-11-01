@@ -1,0 +1,3473 @@
+{
+  "schema": "fhec-cofhe-phase10-independent-oracle-v1",
+  "oracle": "independent-bigint-unsigned-modular-v1",
+  "purpose": "Deterministic boundary and pseudorandom differential CoFHE mock tests; never live gas evidence",
+  "cases_per_family": 16,
+  "families": 24,
+  "case_count": 384,
+  "seed": "e2abe9259d828b440bb0af9c4c1e824c458938fbaf43ebe091272b139c268db9",
+  "variant_mode": "three-way",
+  "variants": [
+    "optimized",
+    "tuned",
+    "straight"
+  ],
+  "cases": [
+    {
+      "id": "p10-add-u8-00",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-add-u8-01",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "255",
+      "b": "1",
+      "expected": "0"
+    },
+    {
+      "id": "p10-add-u8-02",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "1",
+      "b": "255",
+      "expected": "0"
+    },
+    {
+      "id": "p10-add-u8-03",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "255",
+      "b": "255",
+      "expected": "254"
+    },
+    {
+      "id": "p10-add-u8-04",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "128",
+      "b": "127",
+      "expected": "255"
+    },
+    {
+      "id": "p10-add-u8-05",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "0",
+      "b": "255",
+      "expected": "255"
+    },
+    {
+      "id": "p10-add-u8-06",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "1",
+      "b": "1",
+      "expected": "2"
+    },
+    {
+      "id": "p10-add-u8-07",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "127",
+      "b": "128",
+      "expected": "255"
+    },
+    {
+      "id": "p10-add-u8-08",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "167",
+      "b": "49",
+      "expected": "216"
+    },
+    {
+      "id": "p10-add-u8-09",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "133",
+      "b": "238",
+      "expected": "115"
+    },
+    {
+      "id": "p10-add-u8-10",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "229",
+      "b": "9",
+      "expected": "238"
+    },
+    {
+      "id": "p10-add-u8-11",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "91",
+      "b": "187",
+      "expected": "22"
+    },
+    {
+      "id": "p10-add-u8-12",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "246",
+      "b": "40",
+      "expected": "30"
+    },
+    {
+      "id": "p10-add-u8-13",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "182",
+      "b": "29",
+      "expected": "211"
+    },
+    {
+      "id": "p10-add-u8-14",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "176",
+      "b": "168",
+      "expected": "88"
+    },
+    {
+      "id": "p10-add-u8-15",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "148",
+      "b": "170",
+      "expected": "62"
+    },
+    {
+      "id": "p10-sub-u8-00",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-sub-u8-01",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "255",
+      "b": "1",
+      "expected": "254"
+    },
+    {
+      "id": "p10-sub-u8-02",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "1",
+      "b": "255",
+      "expected": "2"
+    },
+    {
+      "id": "p10-sub-u8-03",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "255",
+      "b": "255",
+      "expected": "0"
+    },
+    {
+      "id": "p10-sub-u8-04",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "128",
+      "b": "127",
+      "expected": "1"
+    },
+    {
+      "id": "p10-sub-u8-05",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "0",
+      "b": "255",
+      "expected": "1"
+    },
+    {
+      "id": "p10-sub-u8-06",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "1",
+      "b": "1",
+      "expected": "0"
+    },
+    {
+      "id": "p10-sub-u8-07",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "127",
+      "b": "128",
+      "expected": "255"
+    },
+    {
+      "id": "p10-sub-u8-08",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "148",
+      "b": "144",
+      "expected": "4"
+    },
+    {
+      "id": "p10-sub-u8-09",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "185",
+      "b": "197",
+      "expected": "244"
+    },
+    {
+      "id": "p10-sub-u8-10",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "129",
+      "b": "239",
+      "expected": "146"
+    },
+    {
+      "id": "p10-sub-u8-11",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "247",
+      "b": "155",
+      "expected": "92"
+    },
+    {
+      "id": "p10-sub-u8-12",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "133",
+      "b": "156",
+      "expected": "233"
+    },
+    {
+      "id": "p10-sub-u8-13",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "170",
+      "b": "111",
+      "expected": "59"
+    },
+    {
+      "id": "p10-sub-u8-14",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "166",
+      "b": "198",
+      "expected": "224"
+    },
+    {
+      "id": "p10-sub-u8-15",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "147",
+      "b": "75",
+      "expected": "72"
+    },
+    {
+      "id": "p10-mul-u8-00",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-mul-u8-01",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "255",
+      "b": "1",
+      "expected": "255"
+    },
+    {
+      "id": "p10-mul-u8-02",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "1",
+      "b": "255",
+      "expected": "255"
+    },
+    {
+      "id": "p10-mul-u8-03",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "255",
+      "b": "255",
+      "expected": "1"
+    },
+    {
+      "id": "p10-mul-u8-04",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "128",
+      "b": "127",
+      "expected": "128"
+    },
+    {
+      "id": "p10-mul-u8-05",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "0",
+      "b": "255",
+      "expected": "0"
+    },
+    {
+      "id": "p10-mul-u8-06",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "1",
+      "b": "1",
+      "expected": "1"
+    },
+    {
+      "id": "p10-mul-u8-07",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "127",
+      "b": "128",
+      "expected": "128"
+    },
+    {
+      "id": "p10-mul-u8-08",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "253",
+      "b": "84",
+      "expected": "4"
+    },
+    {
+      "id": "p10-mul-u8-09",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "239",
+      "b": "6",
+      "expected": "154"
+    },
+    {
+      "id": "p10-mul-u8-10",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "127",
+      "b": "86",
+      "expected": "170"
+    },
+    {
+      "id": "p10-mul-u8-11",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "146",
+      "b": "243",
+      "expected": "150"
+    },
+    {
+      "id": "p10-mul-u8-12",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "239",
+      "b": "67",
+      "expected": "141"
+    },
+    {
+      "id": "p10-mul-u8-13",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "174",
+      "b": "55",
+      "expected": "98"
+    },
+    {
+      "id": "p10-mul-u8-14",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "25",
+      "b": "214",
+      "expected": "230"
+    },
+    {
+      "id": "p10-mul-u8-15",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "210",
+      "b": "174",
+      "expected": "188"
+    },
+    {
+      "id": "p10-gt-u8-00",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "0",
+      "b": "0",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u8-01",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "255",
+      "b": "1",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u8-02",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "1",
+      "b": "255",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u8-03",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "255",
+      "b": "255",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u8-04",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "128",
+      "b": "127",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u8-05",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "0",
+      "b": "255",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u8-06",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "1",
+      "b": "1",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u8-07",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "127",
+      "b": "128",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u8-08",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "116",
+      "b": "64",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u8-09",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "47",
+      "b": "199",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u8-10",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "83",
+      "b": "3",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u8-11",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "182",
+      "b": "33",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u8-12",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "239",
+      "b": "248",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u8-13",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "14",
+      "b": "231",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u8-14",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "0",
+      "b": "71",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u8-15",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "23",
+      "b": "138",
+      "expected": false
+    },
+    {
+      "id": "p10-max-u8-00",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-max-u8-01",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "255",
+      "b": "1",
+      "expected": "255"
+    },
+    {
+      "id": "p10-max-u8-02",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "1",
+      "b": "255",
+      "expected": "255"
+    },
+    {
+      "id": "p10-max-u8-03",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "255",
+      "b": "255",
+      "expected": "255"
+    },
+    {
+      "id": "p10-max-u8-04",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "128",
+      "b": "127",
+      "expected": "128"
+    },
+    {
+      "id": "p10-max-u8-05",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "0",
+      "b": "255",
+      "expected": "255"
+    },
+    {
+      "id": "p10-max-u8-06",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "1",
+      "b": "1",
+      "expected": "1"
+    },
+    {
+      "id": "p10-max-u8-07",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "127",
+      "b": "128",
+      "expected": "128"
+    },
+    {
+      "id": "p10-max-u8-08",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "225",
+      "b": "175",
+      "expected": "225"
+    },
+    {
+      "id": "p10-max-u8-09",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "217",
+      "b": "58",
+      "expected": "217"
+    },
+    {
+      "id": "p10-max-u8-10",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "214",
+      "b": "41",
+      "expected": "214"
+    },
+    {
+      "id": "p10-max-u8-11",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "2",
+      "b": "107",
+      "expected": "107"
+    },
+    {
+      "id": "p10-max-u8-12",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "139",
+      "b": "55",
+      "expected": "139"
+    },
+    {
+      "id": "p10-max-u8-13",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "206",
+      "b": "231",
+      "expected": "231"
+    },
+    {
+      "id": "p10-max-u8-14",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "74",
+      "b": "141",
+      "expected": "141"
+    },
+    {
+      "id": "p10-max-u8-15",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "29",
+      "b": "61",
+      "expected": "61"
+    },
+    {
+      "id": "p10-repeated-u8-00",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u8-01",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "255",
+      "b": "1",
+      "expected": "254"
+    },
+    {
+      "id": "p10-repeated-u8-02",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "1",
+      "b": "255",
+      "expected": "254"
+    },
+    {
+      "id": "p10-repeated-u8-03",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "255",
+      "b": "255",
+      "expected": "2"
+    },
+    {
+      "id": "p10-repeated-u8-04",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "128",
+      "b": "127",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u8-05",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "0",
+      "b": "255",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u8-06",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "1",
+      "b": "1",
+      "expected": "2"
+    },
+    {
+      "id": "p10-repeated-u8-07",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "127",
+      "b": "128",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u8-08",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "176",
+      "b": "98",
+      "expected": "192"
+    },
+    {
+      "id": "p10-repeated-u8-09",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "64",
+      "b": "213",
+      "expected": "128"
+    },
+    {
+      "id": "p10-repeated-u8-10",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "213",
+      "b": "249",
+      "expected": "90"
+    },
+    {
+      "id": "p10-repeated-u8-11",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "181",
+      "b": "79",
+      "expected": "182"
+    },
+    {
+      "id": "p10-repeated-u8-12",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "104",
+      "b": "198",
+      "expected": "224"
+    },
+    {
+      "id": "p10-repeated-u8-13",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "72",
+      "b": "154",
+      "expected": "160"
+    },
+    {
+      "id": "p10-repeated-u8-14",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "192",
+      "b": "16",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u8-15",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "171",
+      "b": "21",
+      "expected": "14"
+    },
+    {
+      "id": "p10-add-u16-00",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-add-u16-01",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "65535",
+      "b": "1",
+      "expected": "0"
+    },
+    {
+      "id": "p10-add-u16-02",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "1",
+      "b": "65535",
+      "expected": "0"
+    },
+    {
+      "id": "p10-add-u16-03",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "65535",
+      "b": "65535",
+      "expected": "65534"
+    },
+    {
+      "id": "p10-add-u16-04",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "32768",
+      "b": "32767",
+      "expected": "65535"
+    },
+    {
+      "id": "p10-add-u16-05",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "0",
+      "b": "65535",
+      "expected": "65535"
+    },
+    {
+      "id": "p10-add-u16-06",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "1",
+      "b": "1",
+      "expected": "2"
+    },
+    {
+      "id": "p10-add-u16-07",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "32767",
+      "b": "32768",
+      "expected": "65535"
+    },
+    {
+      "id": "p10-add-u16-08",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "6990",
+      "b": "14524",
+      "expected": "21514"
+    },
+    {
+      "id": "p10-add-u16-09",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "65477",
+      "b": "6104",
+      "expected": "6045"
+    },
+    {
+      "id": "p10-add-u16-10",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "19893",
+      "b": "22305",
+      "expected": "42198"
+    },
+    {
+      "id": "p10-add-u16-11",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "51222",
+      "b": "64791",
+      "expected": "50477"
+    },
+    {
+      "id": "p10-add-u16-12",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "9677",
+      "b": "37487",
+      "expected": "47164"
+    },
+    {
+      "id": "p10-add-u16-13",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "59812",
+      "b": "13820",
+      "expected": "8096"
+    },
+    {
+      "id": "p10-add-u16-14",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "8823",
+      "b": "53502",
+      "expected": "62325"
+    },
+    {
+      "id": "p10-add-u16-15",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "49408",
+      "b": "2140",
+      "expected": "51548"
+    },
+    {
+      "id": "p10-sub-u16-00",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-sub-u16-01",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "65535",
+      "b": "1",
+      "expected": "65534"
+    },
+    {
+      "id": "p10-sub-u16-02",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "1",
+      "b": "65535",
+      "expected": "2"
+    },
+    {
+      "id": "p10-sub-u16-03",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "65535",
+      "b": "65535",
+      "expected": "0"
+    },
+    {
+      "id": "p10-sub-u16-04",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "32768",
+      "b": "32767",
+      "expected": "1"
+    },
+    {
+      "id": "p10-sub-u16-05",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "0",
+      "b": "65535",
+      "expected": "1"
+    },
+    {
+      "id": "p10-sub-u16-06",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "1",
+      "b": "1",
+      "expected": "0"
+    },
+    {
+      "id": "p10-sub-u16-07",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "32767",
+      "b": "32768",
+      "expected": "65535"
+    },
+    {
+      "id": "p10-sub-u16-08",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "54621",
+      "b": "57899",
+      "expected": "62258"
+    },
+    {
+      "id": "p10-sub-u16-09",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "56897",
+      "b": "27105",
+      "expected": "29792"
+    },
+    {
+      "id": "p10-sub-u16-10",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "21582",
+      "b": "53718",
+      "expected": "33400"
+    },
+    {
+      "id": "p10-sub-u16-11",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "22579",
+      "b": "20974",
+      "expected": "1605"
+    },
+    {
+      "id": "p10-sub-u16-12",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "27315",
+      "b": "38201",
+      "expected": "54650"
+    },
+    {
+      "id": "p10-sub-u16-13",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "3529",
+      "b": "50579",
+      "expected": "18486"
+    },
+    {
+      "id": "p10-sub-u16-14",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "64826",
+      "b": "12539",
+      "expected": "52287"
+    },
+    {
+      "id": "p10-sub-u16-15",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "6706",
+      "b": "51220",
+      "expected": "21022"
+    },
+    {
+      "id": "p10-mul-u16-00",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-mul-u16-01",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "65535",
+      "b": "1",
+      "expected": "65535"
+    },
+    {
+      "id": "p10-mul-u16-02",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "1",
+      "b": "65535",
+      "expected": "65535"
+    },
+    {
+      "id": "p10-mul-u16-03",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "65535",
+      "b": "65535",
+      "expected": "1"
+    },
+    {
+      "id": "p10-mul-u16-04",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "32768",
+      "b": "32767",
+      "expected": "32768"
+    },
+    {
+      "id": "p10-mul-u16-05",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "0",
+      "b": "65535",
+      "expected": "0"
+    },
+    {
+      "id": "p10-mul-u16-06",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "1",
+      "b": "1",
+      "expected": "1"
+    },
+    {
+      "id": "p10-mul-u16-07",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "32767",
+      "b": "32768",
+      "expected": "32768"
+    },
+    {
+      "id": "p10-mul-u16-08",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "27517",
+      "b": "33870",
+      "expected": "13334"
+    },
+    {
+      "id": "p10-mul-u16-09",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "4601",
+      "b": "3277",
+      "expected": "4197"
+    },
+    {
+      "id": "p10-mul-u16-10",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "16544",
+      "b": "22344",
+      "expected": "36096"
+    },
+    {
+      "id": "p10-mul-u16-11",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "16567",
+      "b": "27409",
+      "expected": "51495"
+    },
+    {
+      "id": "p10-mul-u16-12",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "45418",
+      "b": "17768",
+      "expected": "42256"
+    },
+    {
+      "id": "p10-mul-u16-13",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "37929",
+      "b": "49396",
+      "expected": "63252"
+    },
+    {
+      "id": "p10-mul-u16-14",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "59103",
+      "b": "16655",
+      "expected": "9745"
+    },
+    {
+      "id": "p10-mul-u16-15",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "28634",
+      "b": "6354",
+      "expected": "12500"
+    },
+    {
+      "id": "p10-gt-u16-00",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "0",
+      "b": "0",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u16-01",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "65535",
+      "b": "1",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u16-02",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "1",
+      "b": "65535",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u16-03",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "65535",
+      "b": "65535",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u16-04",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "32768",
+      "b": "32767",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u16-05",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "0",
+      "b": "65535",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u16-06",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "1",
+      "b": "1",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u16-07",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "32767",
+      "b": "32768",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u16-08",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "23160",
+      "b": "21694",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u16-09",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "59664",
+      "b": "10084",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u16-10",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "43648",
+      "b": "24302",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u16-11",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "16585",
+      "b": "31682",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u16-12",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "36055",
+      "b": "9623",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u16-13",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "35715",
+      "b": "6286",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u16-14",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "26620",
+      "b": "56118",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u16-15",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "58519",
+      "b": "2019",
+      "expected": true
+    },
+    {
+      "id": "p10-max-u16-00",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-max-u16-01",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "65535",
+      "b": "1",
+      "expected": "65535"
+    },
+    {
+      "id": "p10-max-u16-02",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "1",
+      "b": "65535",
+      "expected": "65535"
+    },
+    {
+      "id": "p10-max-u16-03",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "65535",
+      "b": "65535",
+      "expected": "65535"
+    },
+    {
+      "id": "p10-max-u16-04",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "32768",
+      "b": "32767",
+      "expected": "32768"
+    },
+    {
+      "id": "p10-max-u16-05",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "0",
+      "b": "65535",
+      "expected": "65535"
+    },
+    {
+      "id": "p10-max-u16-06",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "1",
+      "b": "1",
+      "expected": "1"
+    },
+    {
+      "id": "p10-max-u16-07",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "32767",
+      "b": "32768",
+      "expected": "32768"
+    },
+    {
+      "id": "p10-max-u16-08",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "61022",
+      "b": "4003",
+      "expected": "61022"
+    },
+    {
+      "id": "p10-max-u16-09",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "651",
+      "b": "56200",
+      "expected": "56200"
+    },
+    {
+      "id": "p10-max-u16-10",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "30869",
+      "b": "3548",
+      "expected": "30869"
+    },
+    {
+      "id": "p10-max-u16-11",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "44599",
+      "b": "54679",
+      "expected": "54679"
+    },
+    {
+      "id": "p10-max-u16-12",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "14281",
+      "b": "18241",
+      "expected": "18241"
+    },
+    {
+      "id": "p10-max-u16-13",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "14776",
+      "b": "5883",
+      "expected": "14776"
+    },
+    {
+      "id": "p10-max-u16-14",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "4991",
+      "b": "16990",
+      "expected": "16990"
+    },
+    {
+      "id": "p10-max-u16-15",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "24638",
+      "b": "35486",
+      "expected": "35486"
+    },
+    {
+      "id": "p10-repeated-u16-00",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u16-01",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "65535",
+      "b": "1",
+      "expected": "65534"
+    },
+    {
+      "id": "p10-repeated-u16-02",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "1",
+      "b": "65535",
+      "expected": "65534"
+    },
+    {
+      "id": "p10-repeated-u16-03",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "65535",
+      "b": "65535",
+      "expected": "2"
+    },
+    {
+      "id": "p10-repeated-u16-04",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "32768",
+      "b": "32767",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u16-05",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "0",
+      "b": "65535",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u16-06",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "1",
+      "b": "1",
+      "expected": "2"
+    },
+    {
+      "id": "p10-repeated-u16-07",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "32767",
+      "b": "32768",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u16-08",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "35039",
+      "b": "17546",
+      "expected": "2156"
+    },
+    {
+      "id": "p10-repeated-u16-09",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "21828",
+      "b": "639",
+      "expected": "43384"
+    },
+    {
+      "id": "p10-repeated-u16-10",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "43502",
+      "b": "16898",
+      "expected": "24504"
+    },
+    {
+      "id": "p10-repeated-u16-11",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "31157",
+      "b": "13916",
+      "expected": "54808"
+    },
+    {
+      "id": "p10-repeated-u16-12",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "35426",
+      "b": "56367",
+      "expected": "16380"
+    },
+    {
+      "id": "p10-repeated-u16-13",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "12930",
+      "b": "7629",
+      "expected": "22580"
+    },
+    {
+      "id": "p10-repeated-u16-14",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "12023",
+      "b": "10694",
+      "expected": "50196"
+    },
+    {
+      "id": "p10-repeated-u16-15",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "62474",
+      "b": "36099",
+      "expected": "48188"
+    },
+    {
+      "id": "p10-add-u32-00",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-add-u32-01",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "4294967295",
+      "b": "1",
+      "expected": "0"
+    },
+    {
+      "id": "p10-add-u32-02",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "1",
+      "b": "4294967295",
+      "expected": "0"
+    },
+    {
+      "id": "p10-add-u32-03",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "4294967295",
+      "b": "4294967295",
+      "expected": "4294967294"
+    },
+    {
+      "id": "p10-add-u32-04",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "2147483648",
+      "b": "2147483647",
+      "expected": "4294967295"
+    },
+    {
+      "id": "p10-add-u32-05",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "0",
+      "b": "4294967295",
+      "expected": "4294967295"
+    },
+    {
+      "id": "p10-add-u32-06",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "1",
+      "b": "1",
+      "expected": "2"
+    },
+    {
+      "id": "p10-add-u32-07",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "2147483647",
+      "b": "2147483648",
+      "expected": "4294967295"
+    },
+    {
+      "id": "p10-add-u32-08",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "925444388",
+      "b": "138703002",
+      "expected": "1064147390"
+    },
+    {
+      "id": "p10-add-u32-09",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "2872624838",
+      "b": "887530591",
+      "expected": "3760155429"
+    },
+    {
+      "id": "p10-add-u32-10",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "1867772423",
+      "b": "954293866",
+      "expected": "2822066289"
+    },
+    {
+      "id": "p10-add-u32-11",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "3330369237",
+      "b": "2620832400",
+      "expected": "1656234341"
+    },
+    {
+      "id": "p10-add-u32-12",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "678941830",
+      "b": "3663043651",
+      "expected": "47018185"
+    },
+    {
+      "id": "p10-add-u32-13",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "85474365",
+      "b": "2702517196",
+      "expected": "2787991561"
+    },
+    {
+      "id": "p10-add-u32-14",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "2240398881",
+      "b": "730960103",
+      "expected": "2971358984"
+    },
+    {
+      "id": "p10-add-u32-15",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "3233449001",
+      "b": "2465276101",
+      "expected": "1403757806"
+    },
+    {
+      "id": "p10-sub-u32-00",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-sub-u32-01",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "4294967295",
+      "b": "1",
+      "expected": "4294967294"
+    },
+    {
+      "id": "p10-sub-u32-02",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "1",
+      "b": "4294967295",
+      "expected": "2"
+    },
+    {
+      "id": "p10-sub-u32-03",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "4294967295",
+      "b": "4294967295",
+      "expected": "0"
+    },
+    {
+      "id": "p10-sub-u32-04",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "2147483648",
+      "b": "2147483647",
+      "expected": "1"
+    },
+    {
+      "id": "p10-sub-u32-05",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "0",
+      "b": "4294967295",
+      "expected": "1"
+    },
+    {
+      "id": "p10-sub-u32-06",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "1",
+      "b": "1",
+      "expected": "0"
+    },
+    {
+      "id": "p10-sub-u32-07",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "2147483647",
+      "b": "2147483648",
+      "expected": "4294967295"
+    },
+    {
+      "id": "p10-sub-u32-08",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "10379003",
+      "b": "1493743499",
+      "expected": "2811602800"
+    },
+    {
+      "id": "p10-sub-u32-09",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "180150725",
+      "b": "3865391003",
+      "expected": "609727018"
+    },
+    {
+      "id": "p10-sub-u32-10",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "171838817",
+      "b": "994489344",
+      "expected": "3472316769"
+    },
+    {
+      "id": "p10-sub-u32-11",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "2451263291",
+      "b": "1789431083",
+      "expected": "661832208"
+    },
+    {
+      "id": "p10-sub-u32-12",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "4145266095",
+      "b": "3702808213",
+      "expected": "442457882"
+    },
+    {
+      "id": "p10-sub-u32-13",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "3042696376",
+      "b": "602001074",
+      "expected": "2440695302"
+    },
+    {
+      "id": "p10-sub-u32-14",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "3485978208",
+      "b": "2036194820",
+      "expected": "1449783388"
+    },
+    {
+      "id": "p10-sub-u32-15",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "1210497088",
+      "b": "3450849729",
+      "expected": "2054614655"
+    },
+    {
+      "id": "p10-mul-u32-00",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-mul-u32-01",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "4294967295",
+      "b": "1",
+      "expected": "4294967295"
+    },
+    {
+      "id": "p10-mul-u32-02",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "1",
+      "b": "4294967295",
+      "expected": "4294967295"
+    },
+    {
+      "id": "p10-mul-u32-03",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "4294967295",
+      "b": "4294967295",
+      "expected": "1"
+    },
+    {
+      "id": "p10-mul-u32-04",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "2147483648",
+      "b": "2147483647",
+      "expected": "2147483648"
+    },
+    {
+      "id": "p10-mul-u32-05",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "0",
+      "b": "4294967295",
+      "expected": "0"
+    },
+    {
+      "id": "p10-mul-u32-06",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "1",
+      "b": "1",
+      "expected": "1"
+    },
+    {
+      "id": "p10-mul-u32-07",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "2147483647",
+      "b": "2147483648",
+      "expected": "2147483648"
+    },
+    {
+      "id": "p10-mul-u32-08",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "34214001",
+      "b": "2554571353",
+      "expected": "3388850505"
+    },
+    {
+      "id": "p10-mul-u32-09",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "1668636147",
+      "b": "3428731920",
+      "expected": "846463792"
+    },
+    {
+      "id": "p10-mul-u32-10",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "3600742261",
+      "b": "2709638022",
+      "expected": "2892254782"
+    },
+    {
+      "id": "p10-mul-u32-11",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "1102215775",
+      "b": "2034495556",
+      "expected": "3019804988"
+    },
+    {
+      "id": "p10-mul-u32-12",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "211943199",
+      "b": "4246319041",
+      "expected": "3499001695"
+    },
+    {
+      "id": "p10-mul-u32-13",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "124421411",
+      "b": "4806890",
+      "expected": "1545386494"
+    },
+    {
+      "id": "p10-mul-u32-14",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "1409305740",
+      "b": "1005610356",
+      "expected": "899017584"
+    },
+    {
+      "id": "p10-mul-u32-15",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "2045808191",
+      "b": "1061024878",
+      "expected": "317991698"
+    },
+    {
+      "id": "p10-gt-u32-00",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "0",
+      "b": "0",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u32-01",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "4294967295",
+      "b": "1",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u32-02",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "1",
+      "b": "4294967295",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u32-03",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "4294967295",
+      "b": "4294967295",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u32-04",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "2147483648",
+      "b": "2147483647",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u32-05",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "0",
+      "b": "4294967295",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u32-06",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "1",
+      "b": "1",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u32-07",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "2147483647",
+      "b": "2147483648",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u32-08",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "2552658103",
+      "b": "2454192582",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u32-09",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "4292159930",
+      "b": "3609958806",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u32-10",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "1485912242",
+      "b": "3716984898",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u32-11",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "4015170990",
+      "b": "2309174328",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u32-12",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "301415059",
+      "b": "2268654490",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u32-13",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "254854460",
+      "b": "1390855178",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u32-14",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "1761296500",
+      "b": "3567465645",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u32-15",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "3997217359",
+      "b": "805714296",
+      "expected": true
+    },
+    {
+      "id": "p10-max-u32-00",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-max-u32-01",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "4294967295",
+      "b": "1",
+      "expected": "4294967295"
+    },
+    {
+      "id": "p10-max-u32-02",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "1",
+      "b": "4294967295",
+      "expected": "4294967295"
+    },
+    {
+      "id": "p10-max-u32-03",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "4294967295",
+      "b": "4294967295",
+      "expected": "4294967295"
+    },
+    {
+      "id": "p10-max-u32-04",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "2147483648",
+      "b": "2147483647",
+      "expected": "2147483648"
+    },
+    {
+      "id": "p10-max-u32-05",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "0",
+      "b": "4294967295",
+      "expected": "4294967295"
+    },
+    {
+      "id": "p10-max-u32-06",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "1",
+      "b": "1",
+      "expected": "1"
+    },
+    {
+      "id": "p10-max-u32-07",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "2147483647",
+      "b": "2147483648",
+      "expected": "2147483648"
+    },
+    {
+      "id": "p10-max-u32-08",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "3046014333",
+      "b": "108600336",
+      "expected": "3046014333"
+    },
+    {
+      "id": "p10-max-u32-09",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "1635110955",
+      "b": "1586365088",
+      "expected": "1635110955"
+    },
+    {
+      "id": "p10-max-u32-10",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "877576868",
+      "b": "115206735",
+      "expected": "877576868"
+    },
+    {
+      "id": "p10-max-u32-11",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "582475668",
+      "b": "3483959900",
+      "expected": "3483959900"
+    },
+    {
+      "id": "p10-max-u32-12",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "2282133986",
+      "b": "3189440926",
+      "expected": "3189440926"
+    },
+    {
+      "id": "p10-max-u32-13",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "1779681280",
+      "b": "2224306800",
+      "expected": "2224306800"
+    },
+    {
+      "id": "p10-max-u32-14",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "3646033410",
+      "b": "5239348",
+      "expected": "3646033410"
+    },
+    {
+      "id": "p10-max-u32-15",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "1204594306",
+      "b": "52152465",
+      "expected": "1204594306"
+    },
+    {
+      "id": "p10-repeated-u32-00",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u32-01",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "4294967295",
+      "b": "1",
+      "expected": "4294967294"
+    },
+    {
+      "id": "p10-repeated-u32-02",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "1",
+      "b": "4294967295",
+      "expected": "4294967294"
+    },
+    {
+      "id": "p10-repeated-u32-03",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "4294967295",
+      "b": "4294967295",
+      "expected": "2"
+    },
+    {
+      "id": "p10-repeated-u32-04",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "2147483648",
+      "b": "2147483647",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u32-05",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "0",
+      "b": "4294967295",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u32-06",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "1",
+      "b": "1",
+      "expected": "2"
+    },
+    {
+      "id": "p10-repeated-u32-07",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "2147483647",
+      "b": "2147483648",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u32-08",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "2400021310",
+      "b": "2016533792",
+      "expected": "473947008"
+    },
+    {
+      "id": "p10-repeated-u32-09",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "1794681196",
+      "b": "1363130905",
+      "expected": "4125755160"
+    },
+    {
+      "id": "p10-repeated-u32-10",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "3510110444",
+      "b": "168672829",
+      "expected": "971673720"
+    },
+    {
+      "id": "p10-repeated-u32-11",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "1951864339",
+      "b": "3810161554",
+      "expected": "520503212"
+    },
+    {
+      "id": "p10-repeated-u32-12",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "649763126",
+      "b": "1110372509",
+      "expected": "1200434236"
+    },
+    {
+      "id": "p10-repeated-u32-13",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "1139547873",
+      "b": "2142556961",
+      "expected": "1747901442"
+    },
+    {
+      "id": "p10-repeated-u32-14",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "2004992975",
+      "b": "3915845838",
+      "expected": "3957522724"
+    },
+    {
+      "id": "p10-repeated-u32-15",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "2507376960",
+      "b": "4041083033",
+      "expected": "3886943872"
+    },
+    {
+      "id": "p10-add-u64-00",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-add-u64-01",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "18446744073709551615",
+      "b": "1",
+      "expected": "0"
+    },
+    {
+      "id": "p10-add-u64-02",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "1",
+      "b": "18446744073709551615",
+      "expected": "0"
+    },
+    {
+      "id": "p10-add-u64-03",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "18446744073709551615",
+      "b": "18446744073709551615",
+      "expected": "18446744073709551614"
+    },
+    {
+      "id": "p10-add-u64-04",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "9223372036854775808",
+      "b": "9223372036854775807",
+      "expected": "18446744073709551615"
+    },
+    {
+      "id": "p10-add-u64-05",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "0",
+      "b": "18446744073709551615",
+      "expected": "18446744073709551615"
+    },
+    {
+      "id": "p10-add-u64-06",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "1",
+      "b": "1",
+      "expected": "2"
+    },
+    {
+      "id": "p10-add-u64-07",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "9223372036854775807",
+      "b": "9223372036854775808",
+      "expected": "18446744073709551615"
+    },
+    {
+      "id": "p10-add-u64-08",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "294652792660573699",
+      "b": "1452559252435816117",
+      "expected": "1747212045096389816"
+    },
+    {
+      "id": "p10-add-u64-09",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "7789550699011577748",
+      "b": "15604176279427537358",
+      "expected": "4946982904729563490"
+    },
+    {
+      "id": "p10-add-u64-10",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "5823289260236821684",
+      "b": "14561620593924991451",
+      "expected": "1938165780452261519"
+    },
+    {
+      "id": "p10-add-u64-11",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "6804926774873697690",
+      "b": "18077364982893860963",
+      "expected": "6435547684058007037"
+    },
+    {
+      "id": "p10-add-u64-12",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "14100995085277563514",
+      "b": "2913519619085958530",
+      "expected": "17014514704363522044"
+    },
+    {
+      "id": "p10-add-u64-13",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "16713666337185782248",
+      "b": "12996130191058962723",
+      "expected": "11263052454535193355"
+    },
+    {
+      "id": "p10-add-u64-14",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "10909952844282456718",
+      "b": "15671972775394306314",
+      "expected": "8135181545967211416"
+    },
+    {
+      "id": "p10-add-u64-15",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "a": "6496802167803416515",
+      "b": "5418616416685248387",
+      "expected": "11915418584488664902"
+    },
+    {
+      "id": "p10-sub-u64-00",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-sub-u64-01",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "18446744073709551615",
+      "b": "1",
+      "expected": "18446744073709551614"
+    },
+    {
+      "id": "p10-sub-u64-02",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "1",
+      "b": "18446744073709551615",
+      "expected": "2"
+    },
+    {
+      "id": "p10-sub-u64-03",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "18446744073709551615",
+      "b": "18446744073709551615",
+      "expected": "0"
+    },
+    {
+      "id": "p10-sub-u64-04",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "9223372036854775808",
+      "b": "9223372036854775807",
+      "expected": "1"
+    },
+    {
+      "id": "p10-sub-u64-05",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "0",
+      "b": "18446744073709551615",
+      "expected": "1"
+    },
+    {
+      "id": "p10-sub-u64-06",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "1",
+      "b": "1",
+      "expected": "0"
+    },
+    {
+      "id": "p10-sub-u64-07",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "9223372036854775807",
+      "b": "9223372036854775808",
+      "expected": "18446744073709551615"
+    },
+    {
+      "id": "p10-sub-u64-08",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "10771274538325868764",
+      "b": "14873414629594762637",
+      "expected": "14344603982440657743"
+    },
+    {
+      "id": "p10-sub-u64-09",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "83697376132565018",
+      "b": "18349471952773232118",
+      "expected": "180969497068884516"
+    },
+    {
+      "id": "p10-sub-u64-10",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "10272060233881220337",
+      "b": "77972345909276585",
+      "expected": "10194087887971943752"
+    },
+    {
+      "id": "p10-sub-u64-11",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "5911356347206419784",
+      "b": "11053427706837333114",
+      "expected": "13304672714078638286"
+    },
+    {
+      "id": "p10-sub-u64-12",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "16794625437213847502",
+      "b": "15885143843378589542",
+      "expected": "909481593835257960"
+    },
+    {
+      "id": "p10-sub-u64-13",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "2772908723598263107",
+      "b": "16577163777437917942",
+      "expected": "4642489019869896781"
+    },
+    {
+      "id": "p10-sub-u64-14",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "16475133483221092921",
+      "b": "6533193553958124805",
+      "expected": "9941939929262968116"
+    },
+    {
+      "id": "p10-sub-u64-15",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "a": "5107328777548316808",
+      "b": "3770682411301080590",
+      "expected": "1336646366247236218"
+    },
+    {
+      "id": "p10-mul-u64-00",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-mul-u64-01",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "18446744073709551615",
+      "b": "1",
+      "expected": "18446744073709551615"
+    },
+    {
+      "id": "p10-mul-u64-02",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "1",
+      "b": "18446744073709551615",
+      "expected": "18446744073709551615"
+    },
+    {
+      "id": "p10-mul-u64-03",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "18446744073709551615",
+      "b": "18446744073709551615",
+      "expected": "1"
+    },
+    {
+      "id": "p10-mul-u64-04",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "9223372036854775808",
+      "b": "9223372036854775807",
+      "expected": "9223372036854775808"
+    },
+    {
+      "id": "p10-mul-u64-05",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "0",
+      "b": "18446744073709551615",
+      "expected": "0"
+    },
+    {
+      "id": "p10-mul-u64-06",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "1",
+      "b": "1",
+      "expected": "1"
+    },
+    {
+      "id": "p10-mul-u64-07",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "9223372036854775807",
+      "b": "9223372036854775808",
+      "expected": "9223372036854775808"
+    },
+    {
+      "id": "p10-mul-u64-08",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "3496752898911280172",
+      "b": "16343437700208743247",
+      "expected": "12885744896514356628"
+    },
+    {
+      "id": "p10-mul-u64-09",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "14438845062441324643",
+      "b": "6481438151454396684",
+      "expected": "3135305004717692836"
+    },
+    {
+      "id": "p10-mul-u64-10",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "11367780665946248105",
+      "b": "16788378617642672200",
+      "expected": "13810729844289267592"
+    },
+    {
+      "id": "p10-mul-u64-11",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "17294220546786055398",
+      "b": "3316196863065264798",
+      "expected": "7496037331602215412"
+    },
+    {
+      "id": "p10-mul-u64-12",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "15484869515277587864",
+      "b": "16658766545450016176",
+      "expected": "9161403589827039360"
+    },
+    {
+      "id": "p10-mul-u64-13",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "17392571676882406388",
+      "b": "14564323795275910616",
+      "expected": "12463787067250014688"
+    },
+    {
+      "id": "p10-mul-u64-14",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "10478810813419604686",
+      "b": "1279812740991162282",
+      "expected": "11277049039985127116"
+    },
+    {
+      "id": "p10-mul-u64-15",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "a": "7484279839525385055",
+      "b": "5728668791870769243",
+      "expected": "4736528472562694853"
+    },
+    {
+      "id": "p10-gt-u64-00",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "0",
+      "b": "0",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u64-01",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "18446744073709551615",
+      "b": "1",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u64-02",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "1",
+      "b": "18446744073709551615",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u64-03",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "18446744073709551615",
+      "b": "18446744073709551615",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u64-04",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "9223372036854775808",
+      "b": "9223372036854775807",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u64-05",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "0",
+      "b": "18446744073709551615",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u64-06",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "1",
+      "b": "1",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u64-07",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "9223372036854775807",
+      "b": "9223372036854775808",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u64-08",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "15380292394484166612",
+      "b": "11284223108983902924",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u64-09",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "1124984743660601809",
+      "b": "1266463201067786700",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u64-10",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "9723821170991098726",
+      "b": "16663643635650393780",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u64-11",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "1565422144019127906",
+      "b": "11036444534298036416",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u64-12",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "951684542715003766",
+      "b": "17795907968549099901",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u64-13",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "5997713597160029639",
+      "b": "13725916435393114803",
+      "expected": false
+    },
+    {
+      "id": "p10-gt-u64-14",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "17268856640859718865",
+      "b": "8073802200163926296",
+      "expected": true
+    },
+    {
+      "id": "p10-gt-u64-15",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "a": "8571719517888126993",
+      "b": "14160679655368003114",
+      "expected": false
+    },
+    {
+      "id": "p10-max-u64-00",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-max-u64-01",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "18446744073709551615",
+      "b": "1",
+      "expected": "18446744073709551615"
+    },
+    {
+      "id": "p10-max-u64-02",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "1",
+      "b": "18446744073709551615",
+      "expected": "18446744073709551615"
+    },
+    {
+      "id": "p10-max-u64-03",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "18446744073709551615",
+      "b": "18446744073709551615",
+      "expected": "18446744073709551615"
+    },
+    {
+      "id": "p10-max-u64-04",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "9223372036854775808",
+      "b": "9223372036854775807",
+      "expected": "9223372036854775808"
+    },
+    {
+      "id": "p10-max-u64-05",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "0",
+      "b": "18446744073709551615",
+      "expected": "18446744073709551615"
+    },
+    {
+      "id": "p10-max-u64-06",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "1",
+      "b": "1",
+      "expected": "1"
+    },
+    {
+      "id": "p10-max-u64-07",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "9223372036854775807",
+      "b": "9223372036854775808",
+      "expected": "9223372036854775808"
+    },
+    {
+      "id": "p10-max-u64-08",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "2986865623252913888",
+      "b": "8375551891629167419",
+      "expected": "8375551891629167419"
+    },
+    {
+      "id": "p10-max-u64-09",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "13492814998066454412",
+      "b": "18067722680122126112",
+      "expected": "18067722680122126112"
+    },
+    {
+      "id": "p10-max-u64-10",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "12764389404416842665",
+      "b": "2128269238681363339",
+      "expected": "12764389404416842665"
+    },
+    {
+      "id": "p10-max-u64-11",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "10199318581816016684",
+      "b": "13759317662327078489",
+      "expected": "13759317662327078489"
+    },
+    {
+      "id": "p10-max-u64-12",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "7222619331781396274",
+      "b": "17554893173563534748",
+      "expected": "17554893173563534748"
+    },
+    {
+      "id": "p10-max-u64-13",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "4978428214326138455",
+      "b": "4468159247685697630",
+      "expected": "4978428214326138455"
+    },
+    {
+      "id": "p10-max-u64-14",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "10606234961806186316",
+      "b": "14368635733396536177",
+      "expected": "14368635733396536177"
+    },
+    {
+      "id": "p10-max-u64-15",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "a": "3665326928924262774",
+      "b": "6532576570774902211",
+      "expected": "6532576570774902211"
+    },
+    {
+      "id": "p10-repeated-u64-00",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "0",
+      "b": "0",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u64-01",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "18446744073709551615",
+      "b": "1",
+      "expected": "18446744073709551614"
+    },
+    {
+      "id": "p10-repeated-u64-02",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "1",
+      "b": "18446744073709551615",
+      "expected": "18446744073709551614"
+    },
+    {
+      "id": "p10-repeated-u64-03",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "18446744073709551615",
+      "b": "18446744073709551615",
+      "expected": "2"
+    },
+    {
+      "id": "p10-repeated-u64-04",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "9223372036854775808",
+      "b": "9223372036854775807",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u64-05",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "0",
+      "b": "18446744073709551615",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u64-06",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "1",
+      "b": "1",
+      "expected": "2"
+    },
+    {
+      "id": "p10-repeated-u64-07",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "9223372036854775807",
+      "b": "9223372036854775808",
+      "expected": "0"
+    },
+    {
+      "id": "p10-repeated-u64-08",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "1607557491519457363",
+      "b": "2519097343963411695",
+      "expected": "7447580346622165754"
+    },
+    {
+      "id": "p10-repeated-u64-09",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "11103685268687668655",
+      "b": "13657699111290179103",
+      "expected": "17055370936876270690"
+    },
+    {
+      "id": "p10-repeated-u64-10",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "11780842692105372571",
+      "b": "4018548054391608607",
+      "expected": "12681173934509837706"
+    },
+    {
+      "id": "p10-repeated-u64-11",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "6058770185927074659",
+      "b": "16871954429966621",
+      "expected": "6479310189402823278"
+    },
+    {
+      "id": "p10-repeated-u64-12",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "16695856171029598142",
+      "b": "17021679288534940110",
+      "expected": "7685446837529997768"
+    },
+    {
+      "id": "p10-repeated-u64-13",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "3662652976263310175",
+      "b": "3126998979670313625",
+      "expected": "2738316366017872782"
+    },
+    {
+      "id": "p10-repeated-u64-14",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "705439571909278933",
+      "b": "14934057098302405077",
+      "expected": "7240227886901728370"
+    },
+    {
+      "id": "p10-repeated-u64-15",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "a": "12948544645128216796",
+      "b": "2909477585616790290",
+      "expected": "2585993801399256816"
+    }
+  ]
+}

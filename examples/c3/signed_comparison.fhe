@@ -1,0 +1,3 @@
+fn less_signed(a: encrypted<i8>, b: encrypted<i8>) -> encrypted<bool> {
+    return a < b;
+}

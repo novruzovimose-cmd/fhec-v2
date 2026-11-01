@@ -1,0 +1,17 @@
+[package]
+name = "fhec-bench"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+fhec-optimizer = { path = "../fhec-optimizer" }
+fhec-compiler = { path = "../fhec-compiler" }
+fhec-frontend = { path = "../fhec-frontend" }
+
+fhec-analyzer = { path = "../fhec-analyzer" }
+fhec-backend = { path = "../fhec-backend" }
+fhec-backend-tfhe = { path = "../fhec-backend-tfhe" }
+fhec-runtime = { path = "../fhec-runtime" }

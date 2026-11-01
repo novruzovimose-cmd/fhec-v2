@@ -1,0 +1,7 @@
+fn comparison_select(a: encrypted<u8>, b: encrypted<u8>) -> encrypted<bool> {
+    return if a > b {
+        a == b
+    } else {
+        a < b
+    };
+}

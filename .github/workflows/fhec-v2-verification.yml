@@ -1,0 +1,59 @@
+name: FHEC V2 CoFHE verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rust:
+    name: Rust / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy, rustfmt
+      - uses: Swatinem/rust-cache@v2
+      - name: Verify Rust source formatting
+        run: cargo fmt --all -- --check
+      - name: Test CoFHE backend and CLI
+        run: cargo test --locked -p fhec-backend-cofhe -p fhec-cli
+      - name: Reject Rust lints
+        run: cargo clippy --locked -p fhec-backend-cofhe -p fhec-cli --all-targets -- -D warnings
+
+  cofhe-mocks:
+    name: CoFHE mock execution / Ubuntu
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '10.34.8'
+      - name: Install pinned Hardhat dependencies
+        run: pnpm install --frozen-lockfile
+        working-directory: integration/cofhe-hardhat
+      - name: Generate Solidity from FHEC source
+        run: cargo run --locked -p fhec-cli -- cofhe examples/cofhe_extended.fhe --out integration/cofhe-hardhat/contracts/FHECGenerated.sol
+      - name: Compile generated Solidity
+        run: pnpm compile
+        working-directory: integration/cofhe-hardhat
+      - name: Execute comparison mock tests
+        run: pnpm run test:comparison
+        working-directory: integration/cofhe-hardhat
+      - name: Execute extended execution and security mock tests
+        run: pnpm run test:extended
+        working-directory: integration/cofhe-hardhat

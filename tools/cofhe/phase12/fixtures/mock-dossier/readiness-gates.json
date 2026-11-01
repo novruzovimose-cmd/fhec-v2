@@ -1,0 +1,65 @@
+{
+  "schema": "fhec-cofhe-phase11-release-gates-v1",
+  "scope": "Evidence gates, never an invented software-completion percentage",
+  "granted_funding_usd": null,
+  "total_gates": 9,
+  "locally_verified_gates": 4,
+  "external_evidence_required_gates": 4,
+  "outside_tool_control_gates": 1,
+  "gates": [
+    {
+      "id": "P10_SOURCE_SEAL",
+      "status": "verified-local",
+      "requirement": "Reviewed generated Solidity source seal and full project predecessor provenance",
+      "evidence": "Prepared source seal copied into the self-contained dossier"
+    },
+    {
+      "id": "P10_INDEPENDENT_ORACLE",
+      "status": "verified-local",
+      "requirement": "Independent BigInt modular reference over all unsigned types",
+      "evidence": "72 canonical property vectors across 24 families"
+    },
+    {
+      "id": "P10_MOCK_DIFFERENTIAL",
+      "status": "verified-local",
+      "requirement": "Complete source-sealed CoFHE mock execution results for all selected variants",
+      "evidence": "216 full-width mock ciphertext executions"
+    },
+    {
+      "id": "P11_OFFLINE_DOSSIER",
+      "status": "verified-local",
+      "requirement": "Independent read-only rechecking of bundle source, oracle and result hashes",
+      "evidence": "Phase 11 SHA-256 manifest and independently regenerated output"
+    },
+    {
+      "id": "LIVE_TESTNET",
+      "status": "requires-external-evidence",
+      "requirement": "Separately approved real Arbitrum Sepolia execution and independently corroborated receipts",
+      "evidence": "No live transaction is demonstrated by this local mock dossier"
+    },
+    {
+      "id": "COPROCESSOR_FEES",
+      "status": "requires-external-evidence",
+      "requirement": "Actual protocol task prices and off-chain service costs",
+      "evidence": "Not inferable from mock gas, FHE operation count or native receipts alone"
+    },
+    {
+      "id": "HOSTED_CI",
+      "status": "requires-external-evidence",
+      "requirement": "Public immutable revision passing fresh Windows and Linux hosted runners",
+      "evidence": "Local execution does not prove hosted CI"
+    },
+    {
+      "id": "INDEPENDENT_SECURITY_REVIEW",
+      "status": "requires-external-evidence",
+      "requirement": "External cryptographic/contract/backend review and remediation",
+      "evidence": "Arithmetic mock tests cannot replace a security audit"
+    },
+    {
+      "id": "GRANT_REVIEW",
+      "status": "outside-tool-control",
+      "requirement": "Application eligibility, ecosystem impact, and reviewer approval",
+      "evidence": "No software test can guarantee a financial award"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "schema": "fhec-cofhe-phase89-live-plan-v1",
+  "chain": "arb-sepolia",
+  "chain_id": 421614,
+  "profile": "coverage24",
+  "variant_mode": "optimized-tuned",
+  "variants": [
+    {
+      "name": "optimized",
+      "contract": "FHECPhase6Live"
+    },
+    {
+      "name": "tuned",
+      "contract": "FHECPhase7Tuned"
+    }
+  ],
+  "case_count": 24,
+  "deployment_count": 2,
+  "execution_count": 48,
+  "total_planned_transactions": 50,
+  "cases": [
+    {
+      "id": "add-u8-17",
+      "width": 8,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "196",
+      "input_b": "195",
+      "expected": "135"
+    },
+    {
+      "id": "sub-u8-17",
+      "width": 8,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "196",
+      "input_b": "195",
+      "expected": "1"
+    },
+    {
+      "id": "mul-u8-17",
+      "width": 8,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "196",
+      "input_b": "195",
+      "expected": "76"
+    },
+    {
+      "id": "gt-u8-17",
+      "width": 8,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "196",
+      "input_b": "195",
+      "expected": true
+    },
+    {
+      "id": "max-u8-17",
+      "width": 8,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "196",
+      "input_b": "195",
+      "expected": "196"
+    },
+    {
+      "id": "repeated-u8-17",
+      "width": 8,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "196",
+      "input_b": "195",
+      "expected": "152"
+    },
+    {
+      "id": "add-u16-17",
+      "width": 16,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "49612",
+      "input_b": "50731",
+      "expected": "34807"
+    },
+    {
+      "id": "sub-u16-17",
+      "width": 16,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "49612",
+      "input_b": "50731",
+      "expected": "64417"
+    },
+    {
+      "id": "mul-u16-17",
+      "width": 16,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "49612",
+      "input_b": "50731",
+      "expected": "21828"
+    },
+    {
+      "id": "gt-u16-17",
+      "width": 16,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "49612",
+      "input_b": "50731",
+      "expected": false
+    },
+    {
+      "id": "max-u16-17",
+      "width": 16,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "49612",
+      "input_b": "50731",
+      "expected": "50731"
+    },
+    {
+      "id": "repeated-u16-17",
+      "width": 16,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "49612",
+      "input_b": "50731",
+      "expected": "43656"
+    },
+    {
+      "id": "add-u32-17",
+      "width": 32,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "1154772924",
+      "input_b": "1285122395",
+      "expected": "2439895319"
+    },
+    {
+      "id": "sub-u32-17",
+      "width": 32,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "1154772924",
+      "input_b": "1285122395",
+      "expected": "4164617825"
+    },
+    {
+      "id": "mul-u32-17",
+      "width": 32,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "1154772924",
+      "input_b": "1285122395",
+      "expected": "817091540"
+    },
+    {
+      "id": "gt-u32-17",
+      "width": 32,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "1154772924",
+      "input_b": "1285122395",
+      "expected": false
+    },
+    {
+      "id": "max-u32-17",
+      "width": 32,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "1154772924",
+      "input_b": "1285122395",
+      "expected": "1285122395"
+    },
+    {
+      "id": "repeated-u32-17",
+      "width": 32,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "1154772924",
+      "input_b": "1285122395",
+      "expected": "1634183080"
+    },
+    {
+      "id": "add-u64-17",
+      "width": 64,
+      "operation": "add",
+      "operation_selector": 0,
+      "input_a": "16612126113807306332",
+      "input_b": "17629657111232326523",
+      "expected": "15795039151330081239"
+    },
+    {
+      "id": "sub-u64-17",
+      "width": 64,
+      "operation": "sub",
+      "operation_selector": 1,
+      "input_a": "16612126113807306332",
+      "input_b": "17629657111232326523",
+      "expected": "17429213076284531425"
+    },
+    {
+      "id": "mul-u64-17",
+      "width": 64,
+      "operation": "mul",
+      "operation_selector": 2,
+      "input_a": "16612126113807306332",
+      "input_b": "17629657111232326523",
+      "expected": "12541516782355929652"
+    },
+    {
+      "id": "gt-u64-17",
+      "width": 64,
+      "operation": "gt",
+      "operation_selector": 3,
+      "input_a": "16612126113807306332",
+      "input_b": "17629657111232326523",
+      "expected": false
+    },
+    {
+      "id": "max-u64-17",
+      "width": 64,
+      "operation": "max",
+      "operation_selector": 4,
+      "input_a": "16612126113807306332",
+      "input_b": "17629657111232326523",
+      "expected": "17629657111232326523"
+    },
+    {
+      "id": "repeated-u64-17",
+      "width": 64,
+      "operation": "repeated",
+      "operation_selector": 5,
+      "input_a": "16612126113807306332",
+      "input_b": "17629657111232326523",
+      "expected": "6636289491002307688"
+    }
+  ],
+  "disclosure": {
+    "input_values_are_public_demo_vectors": true,
+    "fee_ceiling_covers_only_native_chain_transactions": true,
+    "offchain_fhe_task_fees": "unverified; no cap or estimate asserted",
+    "result_verification": "SDK decryptForView matched to independent plaintext oracle; not independently cryptographically attested",
+    "no_live_transactions_without_separate_explicit_consent": true
+  }
+}

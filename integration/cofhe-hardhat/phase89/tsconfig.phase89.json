@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig.json",
+  "include": [
+    "./hardhat.phase89.config.ts",
+    "./run-live.ts",
+    "./test/FHECPhase89Prepared.test.ts"
+  ],
+  "exclude": ["node_modules"]
+}

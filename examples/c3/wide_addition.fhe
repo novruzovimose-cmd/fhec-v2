@@ -1,0 +1,3 @@
+fn add_wide(a: encrypted<u16>, b: encrypted<u16>) -> encrypted<u16> {
+    return a + b;
+}

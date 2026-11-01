@@ -1,0 +1,56 @@
+name: FHEC CoFHE Phase 13 cross-platform qualification
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-and-mock:
+    name: Phase 13 offline and mock on ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out exact source revision
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+      - name: Set up Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Set up pnpm 10
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          run_install: false
+      - name: Verify Phase 12 dossier fixture and SHA-256 evidence
+        run: node tools/cofhe/phase11/attest.mjs --directory tools/cofhe/phase12/fixtures/mock-dossier --verify tools/cofhe/phase12/fixtures/mock-dossier/phase11-evidence-manifest.json
+      - name: Verify Phase 12 adversarial and regression tests
+        run: node --test tools/cofhe/phase12/*.test.mjs
+      - name: Verify Phase 13 evidence gatekeeper tests
+        run: node --test --test-isolation=none tools/cofhe/phase13/*.test.mjs
+      - name: Verify deterministic arithmetic stress fixtures
+        run: node tools/cofhe/phase12/stress-fixtures.mjs --verify tools/cofhe/phase12/fixtures/stress
+      - name: Check Rust workspace tests against lockfile
+        run: cargo test --workspace --locked
+      - name: Install locked CoFHE Hardhat dependencies
+        working-directory: integration/cofhe-hardhat
+        run: pnpm install --frozen-lockfile
+      - name: Compile Solidity under Hardhat mocks
+        working-directory: integration/cofhe-hardhat
+        run: pnpm run compile
+      - name: Run CoFHE Hardhat local mock tests
+        working-directory: integration/cofhe-hardhat
+        run: pnpm test

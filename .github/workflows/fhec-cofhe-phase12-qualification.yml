@@ -1,0 +1,40 @@
+name: FHEC V2 CoFHE Phase 12 local qualification checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-dossier-and-rust:
+    name: Offline qualification on ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify source-sealed Phase 11 fixture without any network transaction
+        run: node tools/cofhe/phase11/attest.mjs --directory tools/cofhe/phase12/fixtures/mock-dossier --verify tools/cofhe/phase12/fixtures/mock-dossier/phase11-evidence-manifest.json
+      - name: Execute Phase 12 independent regression and adversarial suite
+        run: node --test tools/cofhe/phase12/*.test.mjs
+      - name: Verify 4608 non-cryptographic, deterministic reference vectors
+        run: node tools/cofhe/phase12/stress-fixtures.mjs --verify tools/cofhe/phase12/fixtures/stress
+      - name: Run full Rust workspace regression
+        run: cargo test --workspace --locked
+

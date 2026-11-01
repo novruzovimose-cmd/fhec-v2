@@ -1,0 +1,28 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "crates/fhec-cli",
+    "crates/fhec-compiler",
+    "crates/fhec-frontend",
+    "crates/fhec-ir",
+    "crates/fhec-optimizer",
+    "crates/fhec-circuit",
+    "crates/fhec-backend",
+    "crates/fhec-backend-tfhe",
+    "crates/fhec-runtime",
+    "crates/fhec-tests",
+    "crates/fhec-bench", "crates/fhec-analyzer",
+    "crates/fhec-backend-cofhe",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+repository = "https://github.com/novruzovimose-cmd/fhe-native-circuit-compiler"
+rust-version = "1.85"
+
+[workspace.dependencies]
+[profile.dev.package."*"]
+opt-level = 3

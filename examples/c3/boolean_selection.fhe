@@ -1,0 +1,7 @@
+fn choose_boolean(a: encrypted<bool>, b: encrypted<bool>, pick_a: encrypted<bool>) -> encrypted<bool> {
+    return if pick_a {
+        a
+    } else {
+        b
+    };
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "fhec-cofhe-phase11-offline-evidence-dossier-v1",
+  "evidence_tier": "locally-executed-cofhe-mocks-with-independent-arithmetic-replay",
+  "live_transactions_claimed": false,
+  "coprocessor_fees_measured": false,
+  "source_file_count": 8,
+  "evidence_file_count": 13,
+  "corpus_sha256": "4913CF9B3758A1561ECC715EA4920170804EAF1B80ACABB5CA2F8662AF8D689C",
+  "source_seal_file_sha256": "721BB33FB4183356CC66351CD210B3CACA201BB9CAB6E964FD526890679E6D11",
+  "independent_mock_executions": 216,
+  "source_and_evidence_sha256": "6D3CB0FC2E25B706D4CF988A58C1515508DB608351D8DBDDAC147B84304EFB6F",
+  "files": [
+    {
+      "file": "corpus.json",
+      "bytes": 13661,
+      "sha256": "31DD7911BBA0B22247476847525D216AAA902F6D9ABCF5B1307207F043C78FA0"
+    },
+    {
+      "file": "mock-observations.json",
+      "bytes": 58222,
+      "sha256": "A9665C92789DD6642D8613C73121581F2B7F749A24B55090100E926F1DB28BFD"
+    },
+    {
+      "file": "validated-mock-results.json",
+      "bytes": 21641,
+      "sha256": "BC52E800CB2EDAAA13E653396CD9812FC3D34555FD3B36967A7549277A98449E"
+    },
+    {
+      "file": "offline-report.html",
+      "bytes": 9082,
+      "sha256": "FD83D25C87DBCF3C066B01A272E7D8325E6E92A75A6F7FE2C923C4D741454758"
+    },
+    {
+      "file": "readiness-gates.json",
+      "bytes": 2617,
+      "sha256": "49BA5DA6D84E7D37F734130D9523A8507611ED4096F6EE0F28971BC2B0625784"
+    },
+    {
+      "file": "sources/FHECPhase6Optimized.sol",
+      "bytes": 3233,
+      "sha256": "F3798EA68B73E3613B6064C8CAF2FA942C3505233219DCFC5E773347D168BD84"
+    },
+    {
+      "file": "sources/FHECPhase6Live.sol",
+      "bytes": 6115,
+      "sha256": "3D80D902DCD5081B87B988A398011C6DCA846344B1FB0BB9CB343CABFC6136D9"
+    },
+    {
+      "file": "sources/FHECPhase7ManualStraight.sol",
+      "bytes": 2966,
+      "sha256": "4707B0686D8083DFB48AD1DC4AE9DC00C71A44ADB374E1E75D9ECEFDEF9A3DFC"
+    },
+    {
+      "file": "sources/FHECPhase7ManualTuned.sol",
+      "bytes": 3078,
+      "sha256": "830D8A6157058BBC3B3F7F886DB47A1D510F0FC57BA5236065EB11EB2B8248F1"
+    },
+    {
+      "file": "sources/FHECPhase7Straight.sol",
+      "bytes": 6249,
+      "sha256": "4521FFD010AF44BA5CABB231D7E5071B504FEC996F7C9B4DCFF644D7CCD7660F"
+    },
+    {
+      "file": "sources/FHECPhase7Tuned.sol",
+      "bytes": 6168,
+      "sha256": "31DC015D5D4F9E95760C548F8459E7A6F689AB28029F69D5B7C1791695F55B5B"
+    },
+    {
+      "file": "sources/phase89-plan.json",
+      "bytes": 5879,
+      "sha256": "18CE7B3EA5261596F9B413504B9E114076D9146402C7A2A10C5E7401A290B9A1"
+    },
+    {
+      "file": "sources/phase89-source-seal.json",
+      "bytes": 1271,
+      "sha256": "721BB33FB4183356CC66351CD210B3CACA201BB9CAB6E964FD526890679E6D11"
+    }
+  ],
+  "limitations": [
+    "No real network transactions are sent by this dossier generator.",
+    "Replay validates mock-observed values against an independent reference function; this is not a formal proof.",
+    "Code fingerprints and local test results cannot substitute for independent live protocol metering."
+  ]
+}

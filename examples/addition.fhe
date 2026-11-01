@@ -1,0 +1,6 @@
+fn add(
+    a: encrypted<u8>,
+    b: encrypted<u8>
+) -> encrypted<u8> {
+    return a + b;
+}

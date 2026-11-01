@@ -1,0 +1,76 @@
+{
+  "schema": "fhec-c3-1",
+  "description": "FHEC V1 C3 documentation, examples and verifier",
+  "files": [
+    {
+      "path": "docs/v1-c3/ANALYZER_AND_OPTIMIZER.md",
+      "sha256": "cd802e9c3da319fd7850e6df238c21f7137e53b5fd47103349b8c00491368a1a",
+      "bytes": 9894
+    },
+    {
+      "path": "docs/v1-c3/ARCHITECTURE_AND_DATA_FLOW.md",
+      "sha256": "4d08d5bf1827d6d0d5c8fd15e0053e969d5965640ffb07ef1554f41b89e96d76",
+      "bytes": 4781
+    },
+    {
+      "path": "docs/v1-c3/BENCHMARKS_AND_CALIBRATION.md",
+      "sha256": "a8e1cfd24e6f7739f401a2e7d4ffc77a4ae3315d1c7c467054a398b00c1155d6",
+      "bytes": 8570
+    },
+    {
+      "path": "docs/v1-c3/C3_ACCEPTANCE_AND_REMAINING.md",
+      "sha256": "b64230c8be44d1ed28fec893175b7f758a32261dc23fb9a45404fc7f8c6331b0",
+      "bytes": 6093
+    },
+    {
+      "path": "docs/v1-c3/DEVELOPER_INSTALL_AND_TROUBLESHOOT.md",
+      "sha256": "b4d4b2fed6ad46f7c113e91268d3b850ecede5ab933f27db3eb5a53641dd4c22",
+      "bytes": 9874
+    },
+    {
+      "path": "docs/v1-c3/FHEC_V1_COMPLETE_GUIDE.md",
+      "sha256": "47a8bf03f371993556cc0a3b9c0736a278a9b9b2cae003b505917e36556fd125",
+      "bytes": 25275
+    },
+    {
+      "path": "docs/v1-c3/LANGUAGE_REFERENCE.md",
+      "sha256": "5d0ddfdae5af2f28d50ecac7a435d38109f2621a20ba87055d4a9d9776ed1d68",
+      "bytes": 8756
+    },
+    {
+      "path": "docs/v1-c3/README.md",
+      "sha256": "1a0a59a67e45c4dbf3f4b758d91326b5809caf2532b4c2df08a0d7d754f299d9",
+      "bytes": 3609
+    },
+    {
+      "path": "docs/v1-c3/SECURITY_AND_RUNTIME.md",
+      "sha256": "129a663403ce22b4567abf1c803c07d347056e8ae1da1dbebe4999be11618f59",
+      "bytes": 5898
+    },
+    {
+      "path": "examples/c3/boolean_selection.fhe",
+      "sha256": "b61e233f12a380f8be4b769fc3f0e085ffdbbb5bf76085109ac892d675ecfd6f",
+      "bytes": 169
+    },
+    {
+      "path": "examples/c3/nested_selection.fhe",
+      "sha256": "926dba2656f453be88214f03beae9f3efa94fc2d66920609111512e40ba4f5f9",
+      "bytes": 158
+    },
+    {
+      "path": "examples/c3/signed_comparison.fhe",
+      "sha256": "5b1db79344c3fc05e93d6d1377ae9c1eb9e8c6ed5c1cdd22498c89b0f94a5192",
+      "bytes": 92
+    },
+    {
+      "path": "examples/c3/wide_addition.fhe",
+      "sha256": "6a6680e265ca79758f28e743e2267fc36ffc7c4a2e7e063a159bfbcbee9e1983",
+      "bytes": 90
+    },
+    {
+      "path": "tools/verify-c3.ps1",
+      "sha256": "32133714053910abc036357b7ec176ac7ac2733340c1e3798b6dd9b1ff438230",
+      "bytes": 9182
+    }
+  ]
+}

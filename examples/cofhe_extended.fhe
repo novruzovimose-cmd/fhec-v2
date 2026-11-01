@@ -1,0 +1,25 @@
+fn pick_greater(a: encrypted<u8>, b: encrypted<u8>) -> encrypted<u8> {
+    return if a > b { a } else { b };
+}
+
+fn add_u16(a: encrypted<u16>, b: encrypted<u16>) -> encrypted<u16> {
+    let sum: encrypted<u16> = a + b;
+    return sum;
+}
+
+fn multiply_u32(a: encrypted<u32>, b: encrypted<u32>) -> encrypted<u32> {
+    return a * b;
+}
+
+fn greater_u64(a: encrypted<u64>, b: encrypted<u64>) -> encrypted<bool> {
+    return a > b;
+}
+
+fn twice_u8(a: encrypted<u8>) -> encrypted<u8> {
+    return a + a;
+}
+
+fn four_times_u8(a: encrypted<u8>) -> encrypted<u8> {
+    let twice = twice_u8(a);
+    return twice_u8(twice);
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "fhec-cofhe-phase89-source-seal-v1",
+  "plan_sha256": "49E92F0019114A939C08B52374D462A9DB36225ABC53D6FCC0B2D437C9EA97E3",
+  "files": [
+    {
+      "file": "FHECPhase6Optimized.sol",
+      "bytes": 3233,
+      "sha256": "F3798EA68B73E3613B6064C8CAF2FA942C3505233219DCFC5E773347D168BD84"
+    },
+    {
+      "file": "FHECPhase6Live.sol",
+      "bytes": 6115,
+      "sha256": "3D80D902DCD5081B87B988A398011C6DCA846344B1FB0BB9CB343CABFC6136D9"
+    },
+    {
+      "file": "FHECPhase7ManualStraight.sol",
+      "bytes": 2966,
+      "sha256": "4707B0686D8083DFB48AD1DC4AE9DC00C71A44ADB374E1E75D9ECEFDEF9A3DFC"
+    },
+    {
+      "file": "FHECPhase7ManualTuned.sol",
+      "bytes": 3078,
+      "sha256": "830D8A6157058BBC3B3F7F886DB47A1D510F0FC57BA5236065EB11EB2B8248F1"
+    },
+    {
+      "file": "FHECPhase7Straight.sol",
+      "bytes": 6249,
+      "sha256": "4521FFD010AF44BA5CABB231D7E5071B504FEC996F7C9B4DCFF644D7CCD7660F"
+    },
+    {
+      "file": "FHECPhase7Tuned.sol",
+      "bytes": 6168,
+      "sha256": "31DC015D5D4F9E95760C548F8459E7A6F689AB28029F69D5B7C1791695F55B5B"
+    },
+    {
+      "file": "phase89-plan.json",
+      "bytes": 5879,
+      "sha256": "18CE7B3EA5261596F9B413504B9E114076D9146402C7A2A10C5E7401A290B9A1"
+    }
+  ],
+  "files_count": 7
+}

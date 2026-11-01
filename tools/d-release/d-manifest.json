@@ -1,0 +1,70 @@
+{
+  "schema": "fhec-d-release-1",
+  "files": [
+    {
+      "path": ".github/workflows/fhec-v1-crossplatform.yml",
+      "sha256": "81171ec133048b889d8cbda063e0ede3bbc3b4b1a4ac223acb39349ba3d11642",
+      "bytes": 1344
+    },
+    {
+      "path": "docs/v1-d/CI_AND_REPRODUCIBILITY.md",
+      "sha256": "3be7f6403eed3148bbb44955040be0e02822bedcb07cb72c15c2544eb6b9b00b",
+      "bytes": 2086
+    },
+    {
+      "path": "docs/v1-d/DEPENDENCY_AUDIT.md",
+      "sha256": "43d702b81eb48cff8e5ccf92e54758602bfb2c55cf3efff9a83a3741a805727d",
+      "bytes": 1908
+    },
+    {
+      "path": "docs/v1-d/D_ACCEPTANCE.md",
+      "sha256": "86d121f002e3f2b4498b909f74d97e86a56a0a521164930371241f388d7fee4f",
+      "bytes": 1530
+    },
+    {
+      "path": "docs/v1-d/MASTER_RELEASE_ENGINEERING_GUIDE.md",
+      "sha256": "965c51ec8aea2ca493766396360122a39639a7de0d9939c5a8f25efa4a741fc9",
+      "bytes": 17093
+    },
+    {
+      "path": "docs/v1-d/README.md",
+      "sha256": "e7ea229d302ace621429bfb8c4f0935933d54e1a418b9b96b8fe676c54bcca88",
+      "bytes": 4832
+    },
+    {
+      "path": "docs/v1-d/RELEASE_CONTENTS.md",
+      "sha256": "a0c1ad9b2979648c20a6b20b4d1d1df63ed9cb89b21d9846682e92415b4f5088",
+      "bytes": 2467
+    },
+    {
+      "path": "docs/v1-d/RELEASE_REVIEW_TEMPLATE.md",
+      "sha256": "6e9f9ad0800d7457cc641308a4836a4aef735273373442334d4b044cbf3faf92",
+      "bytes": 2669
+    },
+    {
+      "path": "tools/d-release/dependency-inventory.ps1",
+      "sha256": "250e2be94e74e2a1693d5cf96c00aa32138d85b73ff1c01b9b0d98c840892b83",
+      "bytes": 4149
+    },
+    {
+      "path": "tools/d-release/export-source.ps1",
+      "sha256": "99ff037a8e65528f52a3d9c038984dc3459ac9bbbf1957422cbaf5e3190c8930",
+      "bytes": 7127
+    },
+    {
+      "path": "tools/d-release/verify-checkout.ps1",
+      "sha256": "66a6ef9886c30f775b440c56dc74d89c241fc17c3d91a769a26ea49d367094a6",
+      "bytes": 4824
+    },
+    {
+      "path": "tools/d-release/verify-local.ps1",
+      "sha256": "f8f56a1ccf3c43ed5fa73f3d690f5a5b529622c501a2231a000775871f40017c",
+      "bytes": 2350
+    },
+    {
+      "path": "tools/d-release/version-consistency.ps1",
+      "sha256": "dc21996e4aa7730f1783f34ab687c00b2cf1a52b4ada250828f1f15ddeb5d5d1",
+      "bytes": 2301
+    }
+  ]
+}

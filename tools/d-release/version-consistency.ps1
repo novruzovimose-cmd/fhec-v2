@@ -1,4 +1,4 @@
-﻿param(
+param(
     [Parameter(Mandatory=$true)][string]$Project,
     [Parameter(Mandatory=$true)][string]$OutputDirectory
 )
@@ -15,7 +15,27 @@ try {
     $metadata = ($raw -join "`n") | ConvertFrom-Json
     $members = @($metadata.workspace_members)
     $packages = @($metadata.packages | Where-Object { $members -contains $_.id })
-    if ($packages.Count -ne 12) { throw "Expected 12 release workspace packages; found $($packages.Count). Review workspace layout before release." }
+    $expectedPackageNames = @(
+        'fhec-analyzer',
+        'fhec-backend',
+        'fhec-backend-cofhe',
+        'fhec-backend-tfhe',
+        'fhec-bench',
+        'fhec-circuit',
+        'fhec-cli',
+        'fhec-compiler',
+        'fhec-frontend',
+        'fhec-ir',
+        'fhec-optimizer',
+        'fhec-runtime',
+        'fhec-tests'
+    )
+    $actualPackageNames = @($packages | ForEach-Object { [string]$_.name } | Sort-Object -Unique)
+    $missingPackages = @($expectedPackageNames | Where-Object { $actualPackageNames -notcontains $_ })
+    $unexpectedPackages = @($actualPackageNames | Where-Object { $expectedPackageNames -notcontains $_ })
+    if ($packages.Count -ne $expectedPackageNames.Count -or $missingPackages.Count -gt 0 -or $unexpectedPackages.Count -gt 0) {
+        throw ("Release workspace package inventory mismatch. Missing: [{0}]. Unexpected: [{1}]. Expected {2} packages; found {3}." -f ($missingPackages -join ', '), ($unexpectedPackages -join ', '), $expectedPackageNames.Count, $packages.Count)
+    }
     $versions = @($packages | ForEach-Object { [string]$_.version } | Sort-Object -Unique)
     if ($versions.Count -ne 1) { throw "Conflicting package versions: $($versions -join ', ')" }
     $licenses = @($packages | ForEach-Object { [string]$_.license } | Sort-Object -Unique)
